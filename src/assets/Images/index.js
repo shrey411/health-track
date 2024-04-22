@@ -28,6 +28,9 @@ import NursingService3 from '../../All-Images/NursingService3.png'
 // clients-info template
 import ClientInfoTemp from '../../All-Images/ClientInfoTemplate.png'
 
+// Hospital-section img
+import CareHospitalImg from '../../All-Images/CareHospitalImg.png'
+
 export { 
     HealthCareLogo,
     HomePageBG,
@@ -37,4 +40,5 @@ export {
     FooterBG,HealthcareAppImg,PlaystoreImg,AppleImg,
     NursingService1,NursingService2,NursingService3,
     ClientInfoTemp,
+    CareHospitalImg,
 }

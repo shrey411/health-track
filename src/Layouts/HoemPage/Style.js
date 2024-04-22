@@ -306,4 +306,50 @@ export const Wrapper = styled.section`
 
 }
 
+
+// Hospitals section
+
+.hospitals-section{
+    width: 100%;
+  }
+  .hospitals-section .main-hospitals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hospitals .hospitals-container{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.hospitals-container .header-box span{
+    font-size: 18px;
+    font-family: outfit;
+    color: ${Colors.BACKGROUND_COLOR1}
+}
+
+.hospitals-service .hospitals-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hospitals-service .hospitals-info h3{
+    font-size: 36px;
+    font-family: outfit;
+    color: ${Colors.BACKGROUND_COLOR2};
+}
+
+.hospitals-service .hospitals-info p{
+    font-weight: 300;
+    font-family: outfit;
+}
+
 `

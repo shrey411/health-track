@@ -18,10 +18,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import {  settings1 } from "../../assets/ReactMaterials";
+import { settings1 } from "../../assets/ReactMaterials";
 import CardComponent from "../../Components/Common/CardComponent";
 import Colors from "../../assets/Colors";
 import { FaArrowRightLong } from "../../assets/Icons/index";
+import HospitalCard from "../../Components/Common/HospitalCard";
 
 const HomePage = () => {
     return (
@@ -220,6 +221,27 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <section className="hospitals-section mt-5">
+                        <main className="main-hospitals">
+                            <div className="hospitals-container">
+                                <div className="header-box">
+                                    <span>HOSPITALS</span>
+                                </div>
+                                <div className="hospitals-service">
+                                    <div className="hospitals-info">
+                                        <h3>Find Hospitals Near You</h3>
+                                        <p>
+                                            Explore some of the best tips from around the city from
+                                            our partners and friends.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <HospitalCard/>
+                                </div>
+                            </div>
+                        </main>
                     </section>
                 </section>
             </Wrapper>
