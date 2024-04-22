@@ -3,7 +3,7 @@ import {
     HeaderImg1,
     HeaderImg2,
     HeaderImg3,
-    HoemPageBG,
+
     HomeSectionBG,
     NursingService1,
     NursingService2,
@@ -18,7 +18,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { settings, settings1 } from "../../assets/ReactMaterials";
+import {  settings1 } from "../../assets/ReactMaterials";
 import CardComponent from "../../Components/Common/CardComponent";
 import Colors from "../../assets/Colors";
 import { FaArrowRightLong } from "../../assets/Icons/index";

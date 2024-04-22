@@ -1,4 +1,3 @@
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowBack, IoIosArrowForward } from '../Icons/index'
 import styled from "styled-components";
 import Colors from "../Colors";
