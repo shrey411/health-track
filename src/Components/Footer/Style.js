@@ -55,9 +55,11 @@ export const Wrapper = styled.section`
     justify-content: space-between;
     width: 65%;
 }
+
 .healthcare-app-img{
     width: 80%;
 }
+
 .healthcare-app-img img{
     width: 100%;
 }

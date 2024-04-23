@@ -8,6 +8,7 @@ import { ImInstagram } from "react-icons/im";
 import { GrLocation } from "react-icons/gr";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { SlPhone } from "react-icons/sl";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -22,4 +23,5 @@ export{
     IoIosArrowBack,
     IoIosArrowForward,
     FaArrowRightLong,
+    SlPhone,
 }

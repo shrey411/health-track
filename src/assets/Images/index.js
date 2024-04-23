@@ -30,6 +30,13 @@ import ClientInfoTemp from '../../All-Images/ClientInfoTemplate.png'
 
 // Hospital-section img
 import CareHospitalImg from '../../All-Images/CareHospitalImg.png'
+import UserThreeStarIcon from '../../All-Images/UserThreeStartIcon.png'
+
+// Transportation-vehicle-section img
+import VehicleImg1 from '../../All-Images/VehicleImg1.png'
+import VehicleImg2 from '../../All-Images/VehicleImg2.png'
+import VehicleImg3 from '../../All-Images/VehicleImg3.png'
+
 
 export { 
     HealthCareLogo,
@@ -41,4 +48,7 @@ export {
     NursingService1,NursingService2,NursingService3,
     ClientInfoTemp,
     CareHospitalImg,
+    UserThreeStarIcon,
+    VehicleImg1,    VehicleImg2, VehicleImg3,
+
 }

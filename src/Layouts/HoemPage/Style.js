@@ -324,7 +324,7 @@ export const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 
@@ -350,6 +350,100 @@ export const Wrapper = styled.section`
 .hospitals-service .hospitals-info p{
     font-weight: 300;
     font-family: outfit;
+}
+
+.hospitalCard-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hospital-moreInfo .more-info-btn{
+    background-color: ${Colors.BLACK};
+    color: ${Colors.WHITE};
+    width: 200px;
+    height: 40px;
+}
+
+
+// Transportation-vehicle section
+
+.Transportation-Vehicle-section{
+    width: 100%;
+}
+
+.Transportation-Vehicle-section .main-vehicle-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.main-vehicle-section .vehicle-container{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-vehicle-section .vehicle-parts{
+    background-color: rgba(25 ,42,48,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+.vehicle-container .header-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vehicle-container .header-box h4{
+    color: ${Colors.BACKGROUND_COLOR1};
+    font-family : outfit;
+    font-size: 20px; 
+    font-weight: 300;
+}
+
+.vehicle-container .header-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vehicle-container .header-info h3{
+    color: ${Colors.WHITE};
+    font-size: 45px;
+    font-family: outfit;
+    font-weight: 500;
+    width: 40%
+}
+.vehicle-container .header-info p{
+    color: ${Colors.WHITE};
+    font-size: 20px;
+    font-family: outfit;
+    font-weight: 300;
+    width: 49%
+
+}
+.vehicle-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    margin-top: -8%;
+}
+
+.vehicle-moreInfo .more-info-btn{
+    background-color: ${Colors.BLACK};
+    color: ${Colors.WHITE};
+    width: 200px;
+    height: 40px;
 }
 
 `

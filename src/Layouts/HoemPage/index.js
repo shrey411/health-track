@@ -8,6 +8,9 @@ import {
     NursingService1,
     NursingService2,
     NursingService3,
+    VehicleImg1,
+    VehicleImg2,
+    VehicleImg3,
     vectorImg1,
     vectorImg3,
 } from "../../assets/Images";
@@ -18,11 +21,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { settings1 } from "../../assets/ReactMaterials";
+import { settings1, settings2 } from "../../assets/ReactMaterials";
+import { Grid } from '@mui/material';
+
+
 import CardComponent from "../../Components/Common/CardComponent";
 import Colors from "../../assets/Colors";
 import { FaArrowRightLong } from "../../assets/Icons/index";
 import HospitalCard from "../../Components/Common/HospitalCard";
+import VehicleCard from "../../Components/Common/VehicleCard";
 
 const HomePage = () => {
     return (
@@ -237,10 +244,84 @@ const HomePage = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div>
-                                    <HospitalCard/>
+                                <div className="hospitalCard-details">
+                                    <Grid container rowGap={4} columnSpacing={3} sx={{ width: "100%", margin: "0 0" }}>
+                                        {/* Row 1, Column 1 */}
+                                        <Grid item xs={12} sm={6} md={6}>
+                                            <HospitalCard />
+                                        </Grid>
+
+                                        {/* Row 1, Column 2 */}
+                                        <Grid item xs={12} sm={6} md={6}>
+                                            <HospitalCard />
+                                        </Grid>
+
+                                        {/* Row 2, Column 1 */}
+                                        <Grid item xs={12} sm={6} md={6}>
+                                            <HospitalCard />
+                                        </Grid>
+
+                                        {/* Row 2, Column 2 */}
+                                        <Grid item xs={12} sm={6} md={6}>
+                                            <HospitalCard />
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                                <div className="hospital-moreInfo mt-5">
+                                    <button type="button" className="more-info-btn" color="dark">
+                                        View All Hospitals &nbsp;<FaArrowRightLong />
+                                    </button>
                                 </div>
                             </div>
+                        </main>
+                    </section>
+                    <section className="Transportation-Vehicle-section mt-5">
+                        <main className="main-vehicle-section">
+                            <div className="vehicle-parts">
+                                <div className="vehicle-container">
+                                    <div className="header-box">
+                                        <h4>TRANSPORTATION</h4>
+                                        <div className="header-info">
+                                            <h3>Medical Transportation Vehicle Service</h3>
+                                            <p>There are many variations of passages of
+                                                Lorem Ipsum available, but the majority
+                                                have suffered alteration in some form,
+                                                by injected humour, or randomised words
+                                                which don't look even slightly believable.
+                                                If you are going to use a passage of Lorem Ipsum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="vehicle-details">
+                                <Grid container rowGap={4} columnSpacing={3} sx={{ width: "91%", margin: "0 0" }}>
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg1} title="Ambulance" description="From ₹55/km" />
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg2} title="Private" description="From ₹55/km" />
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg3} title="Private" description="From ₹55/km" />
+                                    </Grid>
+
+                                    {/* Row 2 */}
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg3} title="Private" description="From ₹55/km" />
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg1} title="Ambulance" description="From ₹55/km" />
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} md={4}>
+                                        <VehicleCard imgSrc={VehicleImg2} title="Private" description="From ₹55/km" />
+                                    </Grid>
+                                </Grid>
+                            </div>
+                            <div className="vehicle-moreInfo mt-5">
+                                    <button type="button" className="more-info-btn" color="dark">
+                                        View All Vehicle &nbsp;<FaArrowRightLong />
+                                    </button>
+                                </div>
                         </main>
                     </section>
                 </section>
