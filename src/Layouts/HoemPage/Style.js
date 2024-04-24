@@ -390,7 +390,7 @@ export const Wrapper = styled.section`
 }
 
 .main-vehicle-section .vehicle-parts{
-    background-color: rgba(25 ,42,48,1);
+    background-color: ${Colors.BACKGROUND_COLOR2};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,4 +446,222 @@ export const Wrapper = styled.section`
     height: 40px;
 }
 
+
+// client-review-service
+
+.client-review-section{
+  width: 100%;
+}
+.client-review-section .main-client-review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-client-review .client-review-container{
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.client-review-container .header-box span,
+.client-content-box1 .customer-box span{
+  font-size: 18px;
+  font-family: outfit;
+  color: ${Colors.BACKGROUND_COLOR1}
+}
+
+.client-rating-box .client-rating-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.client-rating-box .client-rating-info h3{
+  font-size: 36px;
+  font-family: outfit;
+  color: ${Colors.BACKGROUND_COLOR2};
+}
+
+.client-rating-box .client-rating-info p{
+  font-weight: 300;
+  font-family: outfit;
+}
+
+.client-rating-slider{
+  width: 100%;
+}
+
+.clientSlider-1{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+}
+
+.clientSlider-1 .client-content-box1{
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.clientSlider-1 .client-content-box1 .client-review p{
+    font-size: 22px;
+    font-family: outfit;
+    font-weight: 400;
+    text-align: center;
+}
+
+.client-content-box1 .customer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.client-content-box1 .customer-box h4{
+    font-size: 26px;
+    font-family: outfit;
+    font-weight: 500;
+}
+
+.client-rating-slider .slick-dots {
+    position: relative;
+}
+.client-rating-slider .slick-dots li {
+    margin: 0px 15px;
+}
+
+
+.client-rating-slider .slick-dots .slick-active span{
+    background-color: ${Colors.BACKGROUND_COLOR1}
+}
+.slick-dots li span{
+    background-color: gray;
+}
+
+
+//  hc-process-container
+ .hc-process-section{
+    width: 100%;
+    background-color: ${Colors.BACKGROUND_COLOR2}
+ }
+
+ .process-box{
+    display: flex;
+    align-items: center;
+ }
+
+ .process-box .header-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 70px;
+ }
+
+ .process-box .header-box .sub-box1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 60%;
+ }
+ .process-box .header-box .sub-box1,
+ .process-box .header-box .service-steps{
+    width: 60%;
+ }
+
+ .process-box .header-box .sub-box1 h4{
+    color: ${Colors.BACKGROUND_COLOR1};
+    font-family : outfit;
+    font-size: 20px; 
+    font-weight: 300;
+ }
+
+ .process-box .header-box .sub-box1 p{
+    color: ${Colors.WHITE};
+    font-family : outfit;
+    font-size: 22px; 
+    font-weight: 300;
+ }
+
+ .process-box .header-box .sub-box1 h2{
+    font-size: 42px;
+    font-family: outfit;
+    font-weight: 500;
+    color: ${Colors.WHITE}
+ }
+ .header-box .service-steps{
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ .service-steps {
+    display: flex;
+    // justify-content: space-around; 
+    gap: 30px;
+    position: absolute;
+    top: 325px; 
+    width: 100%; 
+  }
+  
+  .service-steps .step-box{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .service-steps img {
+    width: 50px; 
+    height: 50px; 
+  }
+  
+  .horizontal-line {
+    height: 2px; 
+    background-color: gray; 
+    width: 100%; 
+    position: relative; 
+    top: 0; 
+  }
+
+  .step-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 25%;
+  }
+  .step-box .content h5{
+    color: white;
+    text-align: center;
+  }
+
+  .step-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    background-color: ${Colors.BACKGROUND_COLOR2}; 
+    border: 2px solid blueviolet; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1;
+  }
+  
+  .step-circle img {
+    width: 40px; 
+    height: 40px; 
+  }
+
+
+  .nursing-img-box{
+    width: 70%
+  }
+  .nursing-img-box img{
+    width: 100%;
+  }
 `

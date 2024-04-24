@@ -78,17 +78,33 @@ export const settings1 = {
     prevArrow: <SamplePrevArrow />
 };
 
+const CustomDot = () => {
+
+    // Style the dot to be square
+    const dotStyle = {
+        width: '15px',
+        height: '15px',
+        margin: '0 10px',
+        display: 'inline-block',
+        transform: 'rotate(45deg)',
+    };
+
+    return <span style={dotStyle} 
+    ></span>;
+
+};
+
 export const settings2 = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    appendDots: (dots) => (
-        <ul style={{ margin: '0px' }}>{dots}</ul>
-      ),
+    customPaging: CustomDot
+
 };
+
 
 
 export const PrevArrow = styled.div`

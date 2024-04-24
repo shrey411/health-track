@@ -1,10 +1,16 @@
 import React from "react";
 import {
+    FirstKit1,
+    FirstKit2,
+    FirstKit3,
+    FirstKit4,
+    FiveStarIcon,
     HeaderImg1,
     HeaderImg2,
     HeaderImg3,
 
     HomeSectionBG,
+    NursingImg1,
     NursingService1,
     NursingService2,
     NursingService3,
@@ -318,10 +324,176 @@ const HomePage = () => {
                                 </Grid>
                             </div>
                             <div className="vehicle-moreInfo mt-5">
-                                    <button type="button" className="more-info-btn" color="dark">
-                                        View All Vehicle &nbsp;<FaArrowRightLong />
-                                    </button>
+                                <button type="button" className="more-info-btn" color="dark">
+                                    View All Vehicle &nbsp;<FaArrowRightLong />
+                                </button>
+                            </div>
+                        </main>
+                    </section>
+                    <section className="client-review-section mt-5">
+                        <main className="main-client-review">
+                            <div className="client-review-container">
+                                <div className="header-box">
+                                    <span>TESTIMONIALS</span>
                                 </div>
+                                <div className="client-rating-box">
+                                    <div className="client-rating-info">
+                                        <h3>What Our Client Says</h3>
+                                    </div>
+                                </div>
+                                <div className="client-rating-slider mt-5">
+                                    <div className="slider-container">
+                                        <Slider {...settings2}>
+                                            <div className="clientSlider-1">
+                                                <div className="client-content-box1 container">
+                                                    <div className="rating-icon">
+                                                        <img src={FiveStarIcon} alt="" />
+                                                    </div>
+                                                    <div className="client-review">
+                                                        <p>Contrary to popular belief, Lorem Ipsum
+                                                            is not simply random text. It has roots
+                                                            in a piece of classical Latin literature
+                                                            from 45 BC, making it over 2000 years old.
+                                                            Richard McClintock, a Latin professor at
+                                                            Hampden-Sydney College in Virginia, looked
+                                                            up one of the more obscure Latin words,
+                                                            consectetur, from a Lorem Ipsum passage,
+                                                            and going through the cites of the word
+                                                            in classical literature</p>
+                                                    </div>
+                                                    <div className="customer-box">
+                                                        <h4>Daniel Miller</h4>
+                                                        <span>Happy Customer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="clientSlider-1">
+                                                <div className="client-content-box1 container">
+                                                    <div className="rating-icon">
+                                                        <img src={FiveStarIcon} alt="" />
+                                                    </div>
+                                                    <div className="client-review">
+                                                        <p>Contrary to popular belief, Lorem Ipsum
+                                                            is not simply random text. It has roots
+                                                            in a piece of classical Latin literature
+                                                            from 45 BC, making it over 2000 years old.
+                                                            Richard McClintock, a Latin professor at
+                                                            Hampden-Sydney College in Virginia, looked
+                                                            up one of the more obscure Latin words,
+                                                            consectetur, from a Lorem Ipsum passage,
+                                                            and going through the cites of the word
+                                                            in classical literature</p>
+                                                    </div>
+                                                    <div className="customer-box">
+                                                        <h4>Daniel Miller</h4>
+                                                        <span>Happy Customer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="clientSlider-1">
+                                                <div className="client-content-box1 container">
+                                                    <div className="rating-icon">
+                                                        <img src={FiveStarIcon} alt="" />
+                                                    </div>
+                                                    <div className="client-review">
+                                                        <p>Contrary to popular belief, Lorem Ipsum
+                                                            is not simply random text. It has roots
+                                                            in a piece of classical Latin literature
+                                                            from 45 BC, making it over 2000 years old.
+                                                            Richard McClintock, a Latin professor at
+                                                            Hampden-Sydney College in Virginia, looked
+                                                            up one of the more obscure Latin words,
+                                                            consectetur, from a Lorem Ipsum passage,
+                                                            and going through the cites of the word
+                                                            in classical literature</p>
+                                                    </div>
+                                                    <div className="customer-box">
+                                                        <h4>Daniel Miller</h4>
+                                                        <span>Happy Customer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="clientSlider-1">
+                                                <div className="client-content-box1 container">
+                                                    <div className="rating-icon">
+                                                        <img src={FiveStarIcon} alt="" />
+                                                    </div>
+                                                    <div className="client-review">
+                                                        <p>Contrary to popular belief, Lorem Ipsum
+                                                            is not simply random text. It has roots
+                                                            in a piece of classical Latin literature
+                                                            from 45 BC, making it over 2000 years old.
+                                                            Richard McClintock, a Latin professor at
+                                                            Hampden-Sydney College in Virginia, looked
+                                                            up one of the more obscure Latin words,
+                                                            consectetur, from a Lorem Ipsum passage,
+                                                            and going through the cites of the word
+                                                            in classical literature</p>
+                                                    </div>
+                                                    <div className="customer-box">
+                                                        <h4>Daniel Miller</h4>
+                                                        <span>Happy Customer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Slider>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </section>
+                    <section className="hc-process-section mt-5">
+                        <main className="main-hc-process">
+                            <div className="hc-process-container">
+                                <div className="process-box">
+                                    <div className="header-box">
+                                        <div className="sub-box1">
+                                            <h4>HOW IT WORKS?</h4>
+                                            <h2>Unforgettable Health Care Experiences Await For You</h2>
+                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                        </div>
+                                        <div className="service-steps">
+                                            <div className="step-box">
+                                                <div className="step-circle">
+                                                    <img src={FirstKit1} alt="" />
+                                                </div>
+                                                <div className="content">
+                                                    <h5>Choose Services</h5>
+                                                </div>
+                                            </div>
+                                            <div className="step-box">
+                                                <div className="step-circle">
+                                                    <img src={FirstKit2} alt="" />
+                                                </div>
+                                                <div className="content">
+                                                    <h5>Book Your Service</h5>
+                                                </div>
+                                            </div>
+                                            <div className="step-box">
+                                                <div className="step-circle">
+                                                    <img src={FirstKit3} alt="" />
+                                                </div>
+                                                <div className="content">
+                                                    <h5>Receive Your Service</h5>
+                                                </div>
+                                            </div>
+                                            <div className="step-box">
+                                                <div className="step-circle">
+                                                    <img src={FirstKit4} alt="" />
+                                                </div>
+                                                <div className="content">
+                                                    <h5>Share Feedback</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="horizontal-line"></div>
+
+                                    </div>
+                                    <div className="nursing-img-box">
+                                        <img src={NursingImg1} alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </main>
                     </section>
                 </section>
@@ -331,3 +503,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+
+

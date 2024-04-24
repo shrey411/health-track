@@ -37,6 +37,15 @@ import VehicleImg1 from '../../All-Images/VehicleImg1.png'
 import VehicleImg2 from '../../All-Images/VehicleImg2.png'
 import VehicleImg3 from '../../All-Images/VehicleImg3.png'
 
+// client-review-section img
+import FiveStarIcon from '../../All-Images/yellow-five-star-Icon.png'
+
+// hc-process-section img
+import NursingImg1 from '../../All-Images/NursingImg1.png'
+import FirstKit1 from '../../All-Images/firstaidkit1.png'
+import FirstKit2 from '../../All-Images/firstaidkit 2.png'
+import FirstKit3 from '../../All-Images/firstaidkit3.png'
+import FirstKit4 from '../../All-Images/firstaidkit4.png'
 
 export { 
     HealthCareLogo,
@@ -50,5 +59,6 @@ export {
     CareHospitalImg,
     UserThreeStarIcon,
     VehicleImg1,    VehicleImg2, VehicleImg3,
-
+    FiveStarIcon,
+    NursingImg1,FirstKit1,FirstKit2,FirstKit3,FirstKit4
 }
