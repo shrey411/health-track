@@ -5,9 +5,9 @@ import Colors from "../Colors";
 export const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    // autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 2,
     arrows: false,
     appendDots: dots => (
         <div
@@ -72,10 +72,37 @@ function SamplePrevArrow(props) {
 export const settings1 = {
     dots: false,
     infinite: true,
+    // autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow /> ,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
 };
 
 const CustomDot = () => {
@@ -99,6 +126,7 @@ export const settings2 = {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     customPaging: CustomDot

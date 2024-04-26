@@ -4,9 +4,11 @@ import { CareHospitalImg, UserThreeStarIcon } from '../../assets/Images';
 import styled from 'styled-components';
 import { GrLocation, SlPhone } from '../../assets/Icons';
 import Colors from '../../assets/Colors';
+// import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const HospitalCard = () => {
     return (
+        // <AnimationOnScroll animateIn="animate__zoomInDown">
         <Card sx={{ display: 'flex', alignItems: 'center', justifyContent: "space-between", height: "400px" }}>
             <Box sx={{ height: "100%", width: "40%" }}>
                 <CardMedia
@@ -41,6 +43,7 @@ const HospitalCard = () => {
                 </Box>
             </CardContent>
         </Card>
+        // </AnimationOnScroll>
     );
 };
 

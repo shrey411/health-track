@@ -1,5 +1,10 @@
 import React from "react";
 import {
+    CatagorieImg1,
+    CatagorieImg2,
+    CatagorieImg3,
+    CatagorieImg4,
+    CatagorieImg5,
     FirstKit1,
     FirstKit2,
     FirstKit3,
@@ -27,8 +32,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { settings1, settings2 } from "../../assets/ReactMaterials";
+import { settings, settings1, settings2 } from "../../assets/ReactMaterials";
 import { Grid } from '@mui/material';
+
+import 'animate.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 import CardComponent from "../../Components/Common/CardComponent";
@@ -36,6 +44,8 @@ import Colors from "../../assets/Colors";
 import { FaArrowRightLong } from "../../assets/Icons/index";
 import HospitalCard from "../../Components/Common/HospitalCard";
 import VehicleCard from "../../Components/Common/VehicleCard";
+import FAQSection from "../../Components/FAQSection/FAQSection";
+
 
 const HomePage = () => {
     return (
@@ -45,11 +55,6 @@ const HomePage = () => {
                     <main className="main-home-section">
                         <Header />
                         <section className="home-container">
-                            {/* <div className='home-box'>
-                            <div className='BG-image'>
-                                {/* <img src={HoemPageBG} alt='' /> */}
-                            {/* </div> */}
-                            {/* </div> */}
                             <div className="Health-Service-Form">
                                 <div className="header-section container">
                                     <div className="box1-head">
@@ -125,39 +130,28 @@ const HomePage = () => {
                                         </p>
                                     </div>
                                 </div>
-                                {/* <div className='catagories-slider'>
+                                <div className='catagories-slider'>
                                     <div className="slider-container">
                                         <Slider {...settings}>
-                                            <div>
-                                                <h3>1</h3>
+                                            <div className="catagorie-img-box">
+                                                <img src={CatagorieImg1} alt="" />
                                             </div>
-                                            <div>
-                                                <h3>2</h3>
+                                            <div  className="catagorie-img-box">
+                                                <img src={CatagorieImg2} alt="" />
                                             </div>
-                                            <div>
-                                                <h3>3</h3>
+                                            <div className="catagorie-img-box">
+                                                <img src={CatagorieImg3} alt="" />
                                             </div>
-                                            <div>
-                                                <h3>4</h3>
+                                            <div className="catagorie-img-box">
+                                                <img src={CatagorieImg4} alt="" />
                                             </div>
-                                            <div>
-                                                <h3>5</h3>
+                                            <div className="catagorie-img-box">
+                                                <img src={CatagorieImg5} alt="" />
                                             </div>
-                                            <div>
-                                                <h3>6</h3>
-                                            </div>
-                                            <div>
-                                                <h3>7</h3>
-                                            </div>
-                                            <div>
-                                                <h3>8</h3>
-                                            </div>
-                                            <div>
-                                                <h3>9</h3>
-                                            </div>
+
                                         </Slider>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </main>
                     </section>
@@ -286,7 +280,10 @@ const HomePage = () => {
                             <div className="vehicle-parts">
                                 <div className="vehicle-container">
                                     <div className="header-box">
-                                        <h4>TRANSPORTATION</h4>
+                                        <AnimationOnScroll animateIn='animate__rotateInDownLeft'
+                                        >
+                                            <h4>TRANSPORTATION</h4>
+                                        </AnimationOnScroll>
                                         <div className="header-info">
                                             <h3>Medical Transportation Vehicle Service</h3>
                                             <p>There are many variations of passages of
@@ -334,7 +331,9 @@ const HomePage = () => {
                         <main className="main-client-review">
                             <div className="client-review-container">
                                 <div className="header-box">
-                                    <span>TESTIMONIALS</span>
+                                    <AnimationOnScroll animateIn="animate__fadeInDown">
+                                        <span>TESTIMONIALS</span>
+                                    </AnimationOnScroll>
                                 </div>
                                 <div className="client-rating-box">
                                     <div className="client-rating-info">
@@ -344,7 +343,7 @@ const HomePage = () => {
                                 <div className="client-rating-slider mt-5">
                                     <div className="slider-container">
                                         <Slider {...settings2}>
-                                            <div className="clientSlider-1">
+                                            <div className="clientSlider-1 ">
                                                 <div className="client-content-box1 container">
                                                     <div className="rating-icon">
                                                         <img src={FiveStarIcon} alt="" />
@@ -397,7 +396,7 @@ const HomePage = () => {
                                                     </div>
                                                     <div className="client-review">
                                                         <p>Contrary to popular belief, Lorem Ipsum
-                                                            is not simply random text. It has roots
+                                                            is not simply random text. It has
                                                             in a piece of classical Latin literature
                                                             from 45 BC, making it over 2000 years old.
                                                             Richard McClintock, a Latin professor at
@@ -442,62 +441,70 @@ const HomePage = () => {
                             </div>
                         </main>
                     </section>
-                    <section className="hc-process-section mt-5">
-                        <main className="main-hc-process">
-                            <div className="hc-process-container">
-                                <div className="process-box">
-                                    <div className="header-box">
-                                        <div className="sub-box1">
-                                            <h4>HOW IT WORKS?</h4>
-                                            <h2>Unforgettable Health Care Experiences Await For You</h2>
-                                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                                        </div>
-                                        <div className="service-steps">
-                                            <div className="step-box">
-                                                <div className="step-circle">
-                                                    <img src={FirstKit1} alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <h5>Choose Services</h5>
-                                                </div>
+                    <section className="mt-5">
+                        <section className="hc-process-section">
+                            <main className="main-hc-process">
+                                <div className="hc-process-container">
+                                    <div className="process-box">
+                                        <div className="header-box">
+                                            <div className="sub-box1">
+                                                <AnimationOnScroll animateIn="animate__fadeInDown">
+                                                    <h4>HOW IT WORKS?</h4>
+                                                </AnimationOnScroll>
+                                                <h2>Unforgettable Health Care Experiences Await For You</h2>
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                                             </div>
-                                            <div className="step-box">
-                                                <div className="step-circle">
-                                                    <img src={FirstKit2} alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <h5>Book Your Service</h5>
-                                                </div>
-                                            </div>
-                                            <div className="step-box">
-                                                <div className="step-circle">
-                                                    <img src={FirstKit3} alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <h5>Receive Your Service</h5>
-                                                </div>
-                                            </div>
-                                            <div className="step-box">
-                                                <div className="step-circle">
-                                                    <img src={FirstKit4} alt="" />
-                                                </div>
-                                                <div className="content">
-                                                    <h5>Share Feedback</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="horizontal-line"></div>
 
-                                    </div>
-                                    <div className="nursing-img-box">
-                                        <img src={NursingImg1} alt="" />
+                                            <AnimationOnScroll animateIn="animate__fadeInLeft" style={{ display: 'flex', justifyContent: "center" }}> {/* Use CSS class for animation */}
+                                                <div className="horizontal-line"></div>
+                                                <div className="service-steps">
+                                                    <div className="step-box">
+                                                        <div className="step-circle">
+                                                            <img src={FirstKit1} alt="" />
+                                                        </div>
+                                                        <div className="content">
+                                                            <h5>Choose Services</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div className="step-box">
+                                                        <div className="step-circle">
+                                                            <img src={FirstKit2} alt="" />
+                                                        </div>
+                                                        <div className="content">
+                                                            <h5>Book Your Service</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div className="step-box">
+                                                        <div className="step-circle">
+                                                            <img src={FirstKit3} alt="" />
+                                                        </div>
+                                                        <div className="content">
+                                                            <h5>Receive Your Service</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div className="step-box">
+                                                        <div className="step-circle">
+                                                            <img src={FirstKit4} alt="" />
+                                                        </div>
+                                                        <div className="content">
+                                                            <h5>Share Feedback</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </AnimationOnScroll>
+                                        </div>
+
+                                        <div className="nursing-img-box">
+                                            <img src={NursingImg1} alt="" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </main>
+                            </main>
+                        </section>
+                        <FAQSection />
                     </section>
-                </section>
-            </Wrapper>
+                </section >
+            </Wrapper >
         </>
     );
 };

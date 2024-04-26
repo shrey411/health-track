@@ -136,6 +136,9 @@ export const Wrapper = styled.section`
 
 // Catagories-section
 
+.catagories-section{
+    width: 100%;
+}
 
 .catagories-section .main-catagories{
     display: flex;
@@ -169,6 +172,17 @@ export const Wrapper = styled.section`
     font-size: 36px;
     font-family: outfit;
     color: ${Colors.BACKGROUND_COLOR2};
+}
+
+.catagories-slider{
+    width: 100%;
+}
+
+.catagories-slider .catagorie-img-box{
+    // width: 350px;
+}
+.catagories-slider .catagorie-img-box img{
+    width: 335px;
 }
 
 .catagories-service .catagories-info p{
@@ -546,6 +560,7 @@ export const Wrapper = styled.section`
 
 
 //  hc-process-container
+
  .hc-process-section{
     width: 100%;
     background-color: ${Colors.BACKGROUND_COLOR2}
@@ -562,17 +577,18 @@ export const Wrapper = styled.section`
     flex-direction: column;
     position: relative;
     gap: 70px;
+    width: 55%;
  }
 
  .process-box .header-box .sub-box1{
     display: flex;
     flex-direction: column;
     gap:20px;
-    width: 60%;
+
  }
  .process-box .header-box .sub-box1,
  .process-box .header-box .service-steps{
-    width: 60%;
+    width: 70%;
  }
 
  .process-box .header-box .sub-box1 h4{
@@ -596,23 +612,21 @@ export const Wrapper = styled.section`
     color: ${Colors.WHITE}
  }
  .header-box .service-steps{
+    //  position: absolute;
+    // display: flex;
+    // justify-content: space-between;
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    // top: 325px; 
+    // width: 100%; 
  }
 
-
- .service-steps {
-    display: flex;
-    // justify-content: space-around; 
-    gap: 30px;
-    position: absolute;
-    top: 325px; 
-    width: 100%; 
-  }
   
   .service-steps .step-box{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 14px;
 
   }
   .service-steps img {
@@ -621,20 +635,15 @@ export const Wrapper = styled.section`
   }
   
   .horizontal-line {
-    height: 2px; 
-    background-color: gray; 
-    width: 100%; 
-    position: relative; 
-    top: 0; 
+    height: 2px;
+    background-color: gray;
+    width: 80%;
+    position: absolute;
+    top: 36px;
+    transform: translateX(21.5%);
   }
 
-  .step-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    width: 25%;
-  }
+  
   .step-box .content h5{
     color: white;
     text-align: center;
@@ -659,9 +668,14 @@ export const Wrapper = styled.section`
 
 
   .nursing-img-box{
-    width: 70%
+    width: 45%
   }
   .nursing-img-box img{
     width: 100%;
   }
+
+
+
+  
+  
 `

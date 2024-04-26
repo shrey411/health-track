@@ -20,6 +20,15 @@ import HealthcareAppImg from '../../All-Images/HealthcareAppImg.png'
 import PlaystoreImg from '../../All-Images/PlaystoreImg.png'
 import AppleImg from '../../All-Images/AppleImg.png'
 
+
+// Catagories-section images
+
+import CatagorieImg1 from '../../All-Images/CatagorieImg1.png'
+import CatagorieImg2 from '../../All-Images/CatagorieImg2.png'
+import CatagorieImg3 from '../../All-Images/CatagorieImg3.png'
+import CatagorieImg4 from '../../All-Images/CatagorieImg4.png'
+import CatagorieImg5 from '../../All-Images/CatagorieImg5.png'
+
 // Nursing-service container img
 import NursingService1 from '../../All-Images/NursingService1.png'
 import NursingService2 from '../../All-Images/NursingService2.png'
@@ -47,6 +56,10 @@ import FirstKit2 from '../../All-Images/firstaidkit 2.png'
 import FirstKit3 from '../../All-Images/firstaidkit3.png'
 import FirstKit4 from '../../All-Images/firstaidkit4.png'
 
+// FAQ-section img
+
+import FAQsectionImg from '../../All-Images/FAQSectionImg.png'
+
 export { 
     HealthCareLogo,
     HomePageBG,
@@ -54,11 +67,13 @@ export {
     HeaderImg1,HeaderImg2,HeaderImg3,
     vectorImg1,vectorImg2,vectorImg3,
     FooterBG,HealthcareAppImg,PlaystoreImg,AppleImg,
+    CatagorieImg1,CatagorieImg2,CatagorieImg3,CatagorieImg4,CatagorieImg5,
     NursingService1,NursingService2,NursingService3,
     ClientInfoTemp,
     CareHospitalImg,
     UserThreeStarIcon,
     VehicleImg1,    VehicleImg2, VehicleImg3,
     FiveStarIcon,
-    NursingImg1,FirstKit1,FirstKit2,FirstKit3,FirstKit4
+    NursingImg1,FirstKit1,FirstKit2,FirstKit3,FirstKit4,
+    FAQsectionImg
 }

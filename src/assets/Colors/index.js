@@ -12,6 +12,7 @@ const Colors = {
      BACKGROUND_COLOR3: "rgba(252, 223, 223, 1)",
      BACKGROUND_COLOR4: "rgba(216, 231, 255, 1)",
      BACKGROUND_COLOR5: "rgba(206, 255, 252, 1)",
+     BACKGROUND_COLOR7: "rgba(246, 246, 246, 1)",
 
 
      //Linear-gradient
