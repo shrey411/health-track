@@ -12,6 +12,7 @@ export const Wrapper = styled.section`
     align-items: center;
 }
 .main-home-section{
+    width: 100%;
     background-image: url(${HomePageBG});
 }
 .home-box .BG-image img{
@@ -19,7 +20,7 @@ export const Wrapper = styled.section`
 }
 .home-container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
 
 }
 .Health-Service-Form{
@@ -34,6 +35,7 @@ export const Wrapper = styled.section`
     align-items: baseline;
     justify-content: center;
     gap: 16px;
+    padding: 0px;
 }
 .header-images{
     display: flex;
@@ -43,6 +45,11 @@ export const Wrapper = styled.section`
 }
 .header-images .header-part1{
     display: flex;
+    width: 100%;
+}
+
+.header-images .header-part1 img{
+    width: 100%;
 }
 
 .header-img4{
@@ -76,50 +83,82 @@ export const Wrapper = styled.section`
 .header-img2 .custom-img4{
     width: 100%;
 } 
+.header-section .box3-form{
+    width: 100%;
+}
+
 .form-group{
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
 }
+
 .form-box1{
-    width: 549px;
+    width: 100%;
     height: 70px;
 }
 
 .form-box2{
     display: flex;
     justify-content: space-between;
-    width: 549px;
+    width: 100%;
     height: 70px;
 }
 .form-box3{
-    width: 549px;
+    width: 100%;
     height: 60px;
+    position: relative;
+    color: ${Colors.WHITE};
+
 }
 .location-box,.country-box{
     width: 47%;
+    position: relative;
 }
 .form-box2 .location-box input,
 .form-box2 .country-box input{
     width: 100%;
     height: 100%;
     border-radius: 68.67px;
-    padding: 30px;
-    border-color: rgba(200, 200, 200, 1);
+    padding-left: 50px;
+    border: 2px solid ${Colors.BORDER_COLOR1};
+    outline: none;
 }
+
+.location-box .input-icon,
+  .country-box .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: ${Colors.ICON_COLOR};
+  }
+
+  .form-box3 .input-icon{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translateY(-50%);
+    font-size: 26px;
+  }
 
 .form-box1 input,
 .form-box3 button{
-   width: 100%;
+    width: 100%;
     height: 100%;
+    padding-left: 30px;
     border-radius: 68.67px;
-    padding: 30px;
+    border: 2px solid ${Colors.BORDER_COLOR1};
+    outline: none;
     
 }
 .form-box3 button{
     background: rgba(255, 60, 72, 1);
     border: none;
+    padding-left: 8px;
+    color: ${Colors.WHITE};
 }
 
 .box1-head h4{
@@ -132,7 +171,61 @@ export const Wrapper = styled.section`
     font-weight: 700;
 }
 
+// responsive header-section
 
+@media (max-width: 1287px) {
+    .box2-head h2{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 1177px) {
+    .form-group{
+        gap: 30px;
+    }
+    .box2-head h2{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 1103px) {
+    .box2-head h2{
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width :1103px ){
+
+    .box2-head h2{
+        font-size: 2.7rem;
+    }
+    .form-box1,
+    .form-box2{
+        height: 60px;
+    }
+
+    .form-box3{
+    height: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .box1-head h4{
+        font-size: 22px;
+    }
+    .box2-head h2{
+        font-size: 2.6rem;
+    }
+    .form-box1,
+    .form-box2{
+        height: 60px;
+    }
+
+    .form-box3{
+    height: 50px;
+    }
+}
+
+  
 
 // Catagories-section
 

@@ -14,6 +14,24 @@ export const Wrapper = styled.section`
     gap:20px;
     align-items: center;
 }
+.navbar-toggler {
+    border-color: ${Colors.BLACK}; // Optional customization for the toggle button
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
 
 .navbar-nav li{
     padding: 0px 15px;
@@ -29,6 +47,24 @@ export const Wrapper = styled.section`
     font-family: "Outfit", sans-serif;
 
 }
+
+@media (max-width: 992px) {
+    .container-fluid .header-box .navbar-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-item {
+      padding: 10px 0;
+    }
+      .navbar-toggler {
+        display: block; 
+        height: 40px;
+      }
+
+  }
 
 
 `

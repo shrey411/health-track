@@ -11,6 +11,11 @@ import { IoIosArrowForward } from "react-icons/io";
 import { SlPhone } from "react-icons/sl";
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import { RiMenuFill } from "react-icons/ri";
+import { IoLayersOutline } from "react-icons/io5";
+import { RiSearchLine } from "react-icons/ri";
+
+
 
 export{
     MdKeyboardArrowDown,
@@ -24,4 +29,7 @@ export{
     IoIosArrowForward,
     FaArrowRightLong,
     SlPhone,
+    RiMenuFill,
+    IoLayersOutline,
+    RiSearchLine,
 }

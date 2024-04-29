@@ -14,6 +14,12 @@ const Colors = {
      BACKGROUND_COLOR5: "rgba(206, 255, 252, 1)",
      BACKGROUND_COLOR7: "rgba(246, 246, 246, 1)",
 
+     // Border-Color in Header-section form 
+     BORDER_COLOR1 : "rgba(200, 200, 200, 1)",
+     
+     // icon-Color in Header-section form 
+    
+     ICON_COLOR : "rgba(142, 142, 142, 1)",
 
      //Linear-gradient
      LINEAR_GRADIENT1: "linear-gradient (180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)",

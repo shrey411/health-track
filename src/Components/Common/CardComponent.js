@@ -8,37 +8,42 @@ import {
     Box,
 } from '@mui/material';
 import { GrLocation } from '../../assets/Icons/index';
+import styled from 'styled-components';
 
 const CardComponent = ({ title, description, imgSrc, color }) => {
     return (
         <Card sx={{
-            maxWidth: '27rem', margin: '3rem auto', display: 'flex',
+            margin: '3rem auto', display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
+            maxWidth: "95%"
         }}>
-            <Box
-                sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection: 'column',
-                    gap: '1rem',
-                    justifyContent:"Center",
-                   backgroundColor: color,
-                   height:"200px" ,
-                   width:"100%",
-                }}
-            >
-                <div style={{ width: "90%",  }}>
-                    <CardMedia
-                        component="img"
-                        height="100%"
-                        width="100%"
-                        src={imgSrc}
-                        alt={title}
-                        style={{ objectFit: 'cover'}}
-                    />
-                </div>
-            </Box>
+            <Media>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        flexDirection: 'column',
+                        gap: '1rem',
+                        justifyContent: "Center",
+                        backgroundColor: color,
+                        height: "200px",
+                        width: "100%",
+                    }}
+                    className="Card-box"
+                >
+                    <div style={{ width: "90%", }}>
+                        <CardMedia
+                            component="img"
+                            height="100%"
+                            width="100%"
+                            src={imgSrc}
+                            alt={title}
+                            style={{ objectFit: 'cover' }}
+                            className='card-media'
+                        />
+                    </div>
+                </Box>
             <CardContent>
                 <Box
                     sx={{
@@ -49,12 +54,12 @@ const CardComponent = ({ title, description, imgSrc, color }) => {
                         gap: '1rem',
                     }}
                 >
-                    <Typography variant="h5" component="h2" sx={{ fontFamily: "outfit", fontSize: "20px" }}>
+                    <Typography variant="h5" component="h2" sx={{ fontFamily: "outfit", fontSize: "20px" }} className='hospital-title'>
                         {title}
                     </Typography>
 
-                    <Typography paragraph sx={{ display: "flex", alignItems:"center", gap:"10px", fontSize: "15px", fontFamily: "outfit", fontWeight: "400" }}>
-                        <span style={{ fontSize:"20px"}}><GrLocation/></span>
+                    <Typography paragraph className="hospital-address" sx={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "15px", fontFamily: "outfit", fontWeight: "400" }}>
+                        <span style={{ fontSize: "20px" }}><GrLocation /></span>
                         {description}
                     </Typography>
                 </Box>
@@ -75,8 +80,26 @@ const CardComponent = ({ title, description, imgSrc, color }) => {
                     View
                 </Button>
             </CardContent>
+            </Media>
         </Card>
     );
 };
 
 export default CardComponent;
+
+
+
+export const Media = styled.div`
+
+@media (max-width: 665px){
+  .Card-box{
+    height: 170px;
+  }
+  .hospital-title{
+    font-size: 18px;
+  }
+  .hospital-address{
+    font-size: 13px;
+  }
+}
+`

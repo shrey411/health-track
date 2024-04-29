@@ -5,6 +5,8 @@ import HealthCareLogo from '../../All-Images/HealthCareLogo.png'
 import HomePageBG from '../../All-Images/HomePageBG.png'
 import HomeSectionBG from '../../All-Images/HomePageSectionBg.png'
 
+import HeaderMainImg from '../../All-Images/HeaderMainImg.png'
+
 import HeaderImg1 from '../../All-Images/HeaderImg1.png'
 import HeaderImg2 from '../../All-Images/HeaderImg2.png'
 import HeaderImg3 from '../../All-Images/HeaderImg3.png'
@@ -63,7 +65,7 @@ import FAQsectionImg from '../../All-Images/FAQSectionImg.png'
 export { 
     HealthCareLogo,
     HomePageBG,
-    HomeSectionBG,
+    HomeSectionBG,HeaderMainImg,
     HeaderImg1,HeaderImg2,HeaderImg3,
     vectorImg1,vectorImg2,vectorImg3,
     FooterBG,HealthcareAppImg,PlaystoreImg,AppleImg,

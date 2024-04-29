@@ -10,11 +10,14 @@ import {
     FirstKit3,
     FirstKit4,
     FiveStarIcon,
-    HeaderImg1,
-    HeaderImg2,
-    HeaderImg3,
+    // HeaderImg1,
+    // HeaderImg2,
+    // HeaderImg3,
+    // HomeSectionBG,
+    // vectorImg1,
 
-    HomeSectionBG,
+    HeaderMainImg,
+
     NursingImg1,
     NursingService1,
     NursingService2,
@@ -22,7 +25,6 @@ import {
     VehicleImg1,
     VehicleImg2,
     VehicleImg3,
-    vectorImg1,
     vectorImg3,
 } from "../../assets/Images";
 import { Wrapper } from "./Style";
@@ -41,7 +43,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import CardComponent from "../../Components/Common/CardComponent";
 import Colors from "../../assets/Colors";
-import { FaArrowRightLong } from "../../assets/Icons/index";
+import { FaArrowRightLong, GrLocation, IoLayersOutline, RiSearchLine } from "../../assets/Icons/index";
 import HospitalCard from "../../Components/Common/HospitalCard";
 import VehicleCard from "../../Components/Common/VehicleCard";
 import FAQSection from "../../Components/FAQSection/FAQSection";
@@ -54,7 +56,7 @@ const HomePage = () => {
                 <section className="container-fluid home-section">
                     <main className="main-home-section">
                         <Header />
-                        <section className="home-container">
+                        <section className="home-container mt-4">
                             <div className="Health-Service-Form">
                                 <div className="header-section container">
                                     <div className="box1-head">
@@ -77,13 +79,22 @@ const HomePage = () => {
                                             </div>
                                             <div className="form-box2">
                                                 <div className="location-box">
+                                                    <span className="input-icon">
+                                                        <GrLocation />
+                                                    </span>
                                                     <input type="text" placeholder="Select Location" />
                                                 </div>
                                                 <div className="country-box">
+                                                    <span className="input-icon">
+                                                        <IoLayersOutline />
+                                                    </span>
                                                     <input type="text" placeholder="Select Catagory" />
                                                 </div>
                                             </div>
                                             <div className="form-box3">
+                                                <span className="input-icon">
+                                                    <RiSearchLine />
+                                                </span>
                                                 <button type="button">Search</button>
                                             </div>
                                         </form>
@@ -92,26 +103,10 @@ const HomePage = () => {
                             </div>
                             <div className="header-images">
                                 <div className="header-part1">
-                                    <div className="header-img1">
-                                        <img className="custom-img1" src={HeaderImg1} alt="" />
-                                    </div>
-                                    <div className="header-img4">
-                                        <div className="vector-box1">
-                                            <img className="vector-style" src={vectorImg1} alt="" />
-                                        </div>
-                                        <div>
-                                            <img className="custom-img2" src={HeaderImg2} alt="" />
-                                        </div>
-                                    </div>
+                                    <img src={HeaderMainImg} alt="" />
+
                                 </div>
-                                <div className="header-part2">
-                                    <div className="header-img3">
-                                        <img className="custom-img3" src={HomeSectionBG} alt="" />
-                                    </div>
-                                    <div className="header-img2">
-                                        <img className="custom-img4" src={HeaderImg3} alt="" />
-                                    </div>
-                                </div>
+
                             </div>
                         </section>
                     </main>
@@ -136,7 +131,7 @@ const HomePage = () => {
                                             <div className="catagorie-img-box">
                                                 <img src={CatagorieImg1} alt="" />
                                             </div>
-                                            <div  className="catagorie-img-box">
+                                            <div className="catagorie-img-box">
                                                 <img src={CatagorieImg2} alt="" />
                                             </div>
                                             <div className="catagorie-img-box">
