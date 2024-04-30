@@ -47,12 +47,76 @@ export const Wrapper = styled.section`
     gap: 20px;
 }
 
+  .question-container span{
+    font-size: 30px;
+    font-family: outfit;
+    font-weight: 500;
+  }
+
+  .question-container p{
+    font-size: 24px;
+    font-family: outfit;
+    font-weight: 400;
+  }
+
  .Faq-container .Faq-right-part{
     width: 40%
  }
 
  .Faq-container .Faq-right-part img{
     width: 100%;
+ }
+
+ @media ( max-width:1300px){
+  .Faq-left-part .question-header h3{
+    font-size: 40px; 
+  }
+
+  .question-container span{
+    font-size: 27px; 
+  }
+
+  .question-container p{
+    font-size: 20px; 
+
+  }
+ }
+
+ @media ( max-width:1230px){
+  .Faq-left-part .question-header h3{
+    font-size: 38px; 
+  }
+
+  .question-container span{
+    font-size: 27px; 
+  }
+
+  .question-container p{
+    font-size: 20px; 
+
+  }
+ }
+
+ @media ( max-width:1170px){
+  .Faq-left-part .question-header h3{
+    font-size: 35px; 
+  }
+
+ }
+
+ @media ( max-width:1078px){
+  .Faq-left-part .question-header h3{
+    font-size: 33px; 
+  }
+  .question-container span{
+    font-size: 25px; 
+  }
+
+  .question-container p{
+    font-size: 18px; 
+
+  }
+
  }
 
 `

@@ -173,4 +173,23 @@ export const Wrapper = styled.section`
     text-decoration: none;
   }
 
+
+  @media (max-width: 1200px){
+    .healthcare-app-detail .app-header h4{
+        font-size: 40px
+    }
+    .healthcare-app-detail .app-content p{
+        font-size: 22px
+    }
+    .download-source .playstore-box ,
+    .download-source .apple-box-box {
+        width: 46% ;
+    }
+    .download-source .playstore-box img ,
+    .download-source .apple-box-box img {
+        width: 100% ;
+    }
+
+  }
+
 `

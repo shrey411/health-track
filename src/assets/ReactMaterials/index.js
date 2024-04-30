@@ -72,7 +72,7 @@ function SamplePrevArrow(props) {
 export const settings1 = {
   dots: false,
   infinite: true,
-  // autoplay: true,
+  autoplay: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
@@ -88,7 +88,7 @@ export const settings1 = {
       },
     },
     {
-      breakpoint: 800,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -144,10 +144,11 @@ export const settings2 = {
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  // autoplay: true,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
-  customPaging: CustomDot
+  customPaging: CustomDot,
+  
 };
 
 
@@ -181,9 +182,9 @@ export const PrevArrow = styled.div`
        top: 44%;
     }
   }
-  @media (max-width: 1024px){
+  @media (max-width: 1025px){
     .PrevButton{
-       top: 49%;
+       top: 44%;
     }
   }
   @media (max-width: 943px){
@@ -242,9 +243,9 @@ export const NextArrow = styled.div`
      top: 44%;
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1025px){
   .NextButton{
-     top: 49%;
+     top: 44%;
   }
 }
 @media (max-width: 943px){

@@ -71,7 +71,7 @@ const Footer = () => {
                             <div className='catagories-box'>
                                 <h5>Catagories</h5>
                                 <ul className='link-list'>
-                                    <Link to="#">Nursing Services</Link>
+                                    <Link to="/Nurses">Nursing Services</Link>
                                     <Link to="#">Hospital Appointments</Link>
                                     <Link to="#">Medicine Delivery</Link>
                                     <Link to="#">Path lab Test</Link>

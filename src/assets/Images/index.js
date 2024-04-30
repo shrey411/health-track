@@ -62,6 +62,15 @@ import FirstKit4 from '../../All-Images/firstaidkit4.png'
 
 import FAQsectionImg from '../../All-Images/FAQSectionImg.png'
 
+
+import NursesPage from '../../All-Images/NursesPage.png'
+import EmargencyNursing from '../../All-Images/EmergencyNursing.png'
+import Physiotherapy from '../../All-Images/Physiotherapy.png'
+import ICUCareathome from '../../All-Images/ICUCareathome.png'
+import MedicalAttendant from '../../All-Images/MedicalAttendant.png'
+import Homeattend from '../../All-Images/Homeattend.png'
+import Expect from '../../All-Images/Expect.png'
+
 export { 
     HealthCareLogo,
     HomePageBG,
@@ -77,5 +86,7 @@ export {
     VehicleImg1,    VehicleImg2, VehicleImg3,
     FiveStarIcon,
     NursingImg1,FirstKit1,FirstKit2,FirstKit3,FirstKit4,
-    FAQsectionImg
+    FAQsectionImg,
+    NursesPage, EmargencyNursing, Physiotherapy, ICUCareathome, MedicalAttendant, Homeattend, Expect
+
 }
