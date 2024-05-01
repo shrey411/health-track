@@ -45,7 +45,7 @@ const HospitalCard = () => {
           textAlign: { xs: "center", md: "left" },
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "baseline" }}>
           <Typography
             variant="h6"
             sx={{ fontFamily: "outfit", fontSize: "30px", fontWeight: "500" }}
@@ -54,7 +54,7 @@ const HospitalCard = () => {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontFamily: "outfit", fontSize: "17px", fontWeight: "300" }}
+            sx={{ fontFamily: "outfit", fontSize: "17px", fontWeight: "300", textAlign: "left" }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, egestas id
             gravida.
@@ -90,8 +90,8 @@ const HospitalCard = () => {
               padding: "0px 6px",
               justifyContent: "space-around",
               width: "100%",
-              maxWidth: { xs: "50%", lg: "65%", md: "100%", sm: "70%"},
-              height: { lg:"40px", md:"35px",sm:"30px",xs: "35px"},
+              maxWidth: { xs: "50%", lg: "70%", md: "100%", sm: "70%"},
+              height: { lg:"40px", md:"35px",sm:"32px",xs: "35px"},
               backgroundColor: Colors.BACKGROUND_COLOR6,
               fontFamily: "outfit",
               fontSize: "14px",

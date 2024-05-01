@@ -203,7 +203,7 @@ export const Wrapper = styled.section`
       height: 50px;
     }
     .form-box3 .input-icon {
-        left: 38%;
+      left: 38%;
     }
   }
 
@@ -223,7 +223,7 @@ export const Wrapper = styled.section`
       height: 50px;
     }
     .form-box3 .input-icon {
-        left: 36%;
+      left: 36%;
     }
   }
 
@@ -406,7 +406,7 @@ export const Wrapper = styled.section`
 
   @media (min-width: 1100px) and (max-width: 1200px) {
     .client-details .info-box1 p {
-        font-size: 18px;
+      font-size: 18px;
     }
     .info-box4 h4,
     .info-box2 h4,
@@ -423,23 +423,21 @@ export const Wrapper = styled.section`
   }
 
   @media (min-width: 1023px) and (max-width: 1100px) {
-    .client-details .info-box1{
-        width: 26%;
+    .client-details .info-box1 {
+      width: 26%;
     }
     .info-box4 h4,
     .info-box2 h4,
     .info-box3 h4 {
       font-size: 43px;
     }
-    
+
     .info-box4 h5,
     .info-box2 h5,
     .info-box3 h5 {
       font-size: 17px;
       width: 48%;
     }
-
-
   }
 
   // Hospitals section
@@ -576,28 +574,45 @@ export const Wrapper = styled.section`
     height: 40px;
   }
 
-
   // Transportation-vehicle section responsive
 
-  @media (max-width: 1266px){
+  @media (max-width: 1266px) {
     .vehicle-container .header-info p {
-        width: 44%;
-
+      width: 44%;
     }
     .vehicle-container .header-info h3 {
-        width: 47%;
-
+      width: 47%;
     }
   }
-  @media (max-width: 1080px){
+  @media (max-width: 1080px) {
     .vehicle-container .header-info h3 {
-        font-size: 41px;
+      font-size: 41px;
     }
     .vehicle-container .header-info p {
-        font-size: 18px;
+      font-size: 18px;
     }
   }
 
+  @media (max-width: 985px) {
+    .vehicle-container .header-info h3 {
+      font-size: 38px;
+    }
+    .vehicle-details {
+      margin-top: -14%;
+  }
+    .main-vehicle-section .vehicle-parts {
+      height: 400px;
+    }
+    .vehicle-container .header-info p {
+      font-size: 16px;
+    }
+
+  }
+
+  @media (max-width: px) {
+
+    
+  }
 
   // client-review-service
 
@@ -693,17 +708,19 @@ export const Wrapper = styled.section`
     background-color: gray;
   }
 
-
   // client-review-service responsive
 
-  @media (max-width:1300px){
+  @media (max-width: 1300px) {
     .clientSlider-1 .client-content-box1 .client-review {
-        width: 90%;
+      width: 90%;
     }
   }
 
-
-
+  @media (max-width: 840px) {
+    .clientSlider-1 .client-content-box1 .client-review p {
+      font-size: 20px;
+    }
+  }
 
   //  hc-process-container
 
@@ -818,57 +835,135 @@ export const Wrapper = styled.section`
     width: 100%;
   }
 
+  @media (max-width: 1290px) {
 
-//   @media (max-width: 1024px) {
-//     /* Reduce padding and spacing */
-//     .process-box {
-//       gap: 40px; /* Reduce gap between sections */
-//     }
+    .process-box .header-box {
+      gap: 50px;
+    }
+    .process-box .header-box .sub-box1 h2 {
+      font-size: 39px;
+    }
+    .horizontal-line {
+      width: 73%;
+      transform: translateX(18.5%);
+    } 
+  }
+
+  @media (max-width: 1230px) {
+
+    .content h5{
+       font-size: 1.2rem;
+    }
+    .process-box .header-box .sub-box1 p {
+      font-size: 20px;
+
+    }
+    .horizontal-line {
+      width: 74%;
+
+    }
+  }
+
+  @media (max-width: 1198px) {
+
+    .process-box .header-box .sub-box1 h2 {
+      font-size: 35px;
+    }
+    .process-box .header-box {
+      gap: 35px;
+    }
+    .content h5{
+      font-size: 1.1rem;
+   }
+
+  }
+
+  @media (max-width: 1130px) {
+    .content h5{
+      font-size: 1rem;
+   }
+  }
+  @media (max-width: 1076px) {
+
+    .process-box .header-box .sub-box1 h2 {
+      font-size: 33px;
+    }
+    .process-box .header-box .sub-box1 p {
+      font-size: 19px;
+    }
+    .step-circle img {
+       width: 35px;
+       height: 35px
+    }
+    .step-circle {
+        width: 75px;
+        height: 75px;
+    }
+  }
+
+  @media (max-width: 1060px) {
+
+    .process-box .header-box .service-steps {
+      width: 75%;
+    }
+    .process-box .header-box {
+      gap: 10px;
+    }
+  }
+
   
-//     .process-box .header-box {
-//       width: 60%; /* Give more width to the header box */
-//     }
-  
-//     .process-box .header-box .sub-box1 {
-//       gap: 15px; /* Reduce gap in the sub-box */
-//     }
-  
-//     .process-box .header-box .sub-box1 h4 {
-//       font-size: 18px; /* Decrease font size */
-//     }
-  
-//     .process-box .header-box .sub-box1 p {
-//       font-size: 20px; /* Adjust font size */
-//     }
-  
-//     .process-box .header-box .sub-box1 h2 {
-//       font-size: 36px; /* Adjust font size */
-//     }
-  
-//     .header-box .service-steps {
-//       gap: 25px; /* Decrease gap in service steps */
-//     }
-  
-//     .horizontal-line {
-//       transform: translateX(20%); /* Adjust the horizontal line */
-//     }
-  
-//     .service-steps .step-box {
-//       gap: 12px; /* Decrease gap in step box */
-//     }
-  
-//     .step-circle {
-//       width: 70px; /* Adjust step circle size */
-//       height: 70px;
-//     }
-  
-//     .step-circle img {
-//       width: 35px;
-//       height: 35px;
-//     }
-  
-//     .nursing-img-box {
-//       width: 40%; /* Reduce image box width */
-//     }
-//   }
+
+
+  //   @media (max-width: 1024px) {
+  //     /* Reduce padding and spacing */
+  //     .process-box {
+  //       gap: 40px; /* Reduce gap between sections */
+  //     }
+
+  //     .process-box .header-box {
+  //       width: 60%; /* Give more width to the header box */
+  //     }
+
+  //     .process-box .header-box .sub-box1 {
+  //       gap: 15px; /* Reduce gap in the sub-box */
+  //     }
+
+  //     .process-box .header-box .sub-box1 h4 {
+  //       font-size: 18px; /* Decrease font size */
+  //     }
+
+  //     .process-box .header-box .sub-box1 p {
+  //       font-size: 20px; /* Adjust font size */
+  //     }
+
+  //     .process-box .header-box .sub-box1 h2 {
+  //       font-size: 36px; /* Adjust font size */
+  //     }
+
+  //     .header-box .service-steps {
+  //       gap: 25px; /* Decrease gap in service steps */
+  //     }
+
+  //     .horizontal-line {
+  //       transform: translateX(20%); /* Adjust the horizontal line */
+  //     }
+
+  //     .service-steps .step-box {
+  //       gap: 12px; /* Decrease gap in step box */
+  //     }
+
+  //     .step-circle {
+  //       width: 70px; /* Adjust step circle size */
+  //       height: 70px;
+  //     }
+
+  //     .step-circle img {
+  //       width: 35px;
+  //       height: 35px;
+  //     }
+
+  //     .nursing-img-box {
+  //       width: 40%; /* Reduce image box width */
+  //     }
+  //   }
 `;

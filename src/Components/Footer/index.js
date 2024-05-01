@@ -3,6 +3,8 @@ import { Wrapper } from './Style'
 import { AppleImg, HealthCareLogo, HealthcareAppImg, PlaystoreImg } from '../../assets/Images'
 import { Link } from 'react-router-dom'
 import { ImInstagram, ImLinkedin2, RiTwitterXFill, TfiFacebook } from '../../assets/Icons/index'
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Footer = () => {
     return (
@@ -38,57 +40,126 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='footer-part-2 mt-5 mb-5'>
-                            <div className='social-media-box'>
-                                <div className='health-logo'>
-                                    <img src={HealthCareLogo} alt="" />
+                            <div className='main-part2'>
+                                <div className='social-media-box'>
+                                    <div className='health-logo'>
+                                        <img src={HealthCareLogo} alt="" />
+                                    </div>
+                                    <div>
+                                        <p>When an unknown printer took a galley of
+                                            type aawer between of awtnd scrambled
+                                            it to make a type specimen book.</p>
+                                    </div>
+                                    <div className='media-icon-box'>
+                                        <span><strong>Follow Us On:</strong></span>
+                                        <ul className='icon-link'>
+                                            <Link to="#"><TfiFacebook /></Link>
+                                            <Link to="#"><RiTwitterXFill /></Link>
+                                            <Link to="#"><ImLinkedin2 /></Link>
+                                            <Link to="#"><ImInstagram /></Link>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p>When an unknown printer took a galley of
-                                        type aawer between of awtnd scrambled
-                                        it to make a type specimen book.</p>
-                                </div>
-                                <div className='media-icon-box'>
-                                    <span><strong>Follow Us On:</strong></span>
-                                    <ul className='icon-link'>
-                                        <Link to="#"><TfiFacebook /></Link>
-                                        <Link to="#"><RiTwitterXFill /></Link>
-                                        <Link to="#"><ImLinkedin2 /></Link>
-                                        <Link to="#"><ImInstagram /></Link>
+                                <Accordion className='footer-accordion'>
+                                    <AccordionSummary className="accordion-summary"
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1-content"
+                                        id="panel1-header"
+                                    >
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Quick Links</span></Typography> {/* Dynamic title */}
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <div>
+                                            <ul className='link-list'>
+                                                <Link to="/">Home</Link>
+                                                <Link to="#">About</Link>
+                                                <Link to="#">Explore Service</Link>
+                                                <Link to="#">Blog</Link>
+                                                <Link to="#">Contact</Link>
+                                                <Link to="#">Become a Vendor</Link>
+                                            </ul>
+                                        </div>
+                                    </AccordionDetails>
+                                </Accordion>
+
+                                <div className='quickLinks-box'>
+                                    <h5>Quick Links</h5>
+                                    <ul className='link-list'>
+                                        <Link to="/">Home</Link>
+                                        <Link to="#">About</Link>
+                                        <Link to="#">Explore Service</Link>
+                                        <Link to="#">Blog</Link>
+                                        <Link to="#">Contact</Link>
+                                        <Link to="#">Become a Vendor</Link>
                                     </ul>
                                 </div>
-                            </div>
-                            <div className='quickLinks-box'>
-                                <h5>Quick Links</h5>
-                                <ul className='link-list'>
-                                    <Link to="#">Home</Link>
-                                    <Link to="#">About</Link>
-                                    <Link to="#">Explore Service</Link>
-                                    <Link to="#">Blog</Link>
-                                    <Link to="#">Contact</Link>
-                                    <Link to="#">Become a Vendor</Link>
-                                </ul>
-                            </div>
-                            <div className='catagories-box'>
-                                <h5>Catagories</h5>
-                                <ul className='link-list'>
-                                    <Link to="/Nurses">Nursing Services</Link>
-                                    <Link to="#">Hospital Appointments</Link>
-                                    <Link to="#">Medicine Delivery</Link>
-                                    <Link to="#">Path lab Test</Link>
-                                    <Link to="#">Medical Transportation</Link>
-                                    <Link to="#">Medical Equipment</Link>
-                                </ul>
-                            </div>
-                            <div className='company-box'>
-                                <h5>Company</h5>
-                                <ul className='link-list'>
-                                    <Link to="#">Privacy Policy</Link>
-                                    <Link to="#">Terms & Conditions</Link>
-                                    <Link to="#">Refund Policy</Link>
-                                    <Link to="#">Help Desk</Link>
-                                    <Link to="#">Career</Link>
-                                    <Link to="#">Join Us</Link>
-                                </ul>
+
+                                <Accordion className='footer-accordion'>
+                                    <AccordionSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1-content"
+                                        id="panel1-header"
+                                    >
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Catagories</span></Typography> {/* Dynamic title */}
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <div>
+                                            <ul className='link-list'>
+                                                <Link to="/Nurses">Nursing Services</Link>
+                                                <Link to="#">Hospital Appointments</Link>
+                                                <Link to="#">Medicine Delivery</Link>
+                                                <Link to="#">Path lab Test</Link>
+                                                <Link to="#">Medical Transportation</Link>
+                                                <Link to="#">Medical Equipment</Link>
+                                            </ul>
+                                        </div> {/* Dynamic content */}
+                                    </AccordionDetails>
+                                </Accordion>
+                                <div className='catagories-box'>
+                                    <h5>Catagories</h5>
+                                    <ul className='link-list'>
+                                        <Link to="/Nurses">Nursing Services</Link>
+                                        <Link to="#">Hospital Appointments</Link>
+                                        <Link to="#">Medicine Delivery</Link>
+                                        <Link to="#">Path lab Test</Link>
+                                        <Link to="#">Medical Transportation</Link>
+                                        <Link to="#">Medical Equipment</Link>
+                                    </ul>
+                                </div>
+
+
+                                <Accordion className='footer-accordion'>
+                                    <AccordionSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1-content"
+                                        id="panel1-header"
+                                    >
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Company</span></Typography> {/* Dynamic title */}
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <div>
+                                            <ul className='link-list'>
+                                                <Link to="#">Privacy Policy</Link>
+                                                <Link to="#">Terms & Conditions</Link>
+                                                <Link to="#">Refund Policy</Link>
+                                                <Link to="#">Help Desk</Link>
+                                                <Link to="#">Career</Link>
+                                                <Link to="#">Join Us</Link>
+                                            </ul>
+                                        </div>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <div className='company-box'>
+                                    <h5>Company</h5>
+                                    <ul className='link-list'>
+                                        <Link to="#">Privacy Policy</Link>
+                                        <Link to="#">Terms & Conditions</Link>
+                                        <Link to="#">Refund Policy</Link>
+                                        <Link to="#">Help Desk</Link>
+                                        <Link to="#">Career</Link>
+                                        <Link to="#">Join Us</Link>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className='footer-part-3 pt-4 pb-3'>

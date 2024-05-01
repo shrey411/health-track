@@ -14,7 +14,7 @@ const VehicleCard = ({ imgSrc, title, description }) => {
         <Box
           sx={{
             position: "absolute",
-            bottom: { lg: 40, md: 27},
+            bottom: { lg: 40, md: 27 , sm : 10},
             left: 0,
             width: "100%",
             color: "white",
@@ -27,7 +27,7 @@ const VehicleCard = ({ imgSrc, title, description }) => {
             variant="h5"
             sx={{
               // fontSize: "29px",
-              fontSize: { lg: '29px', md: '24px' }, 
+              fontSize: { lg: '29px', md: '24px' , sm: "20px" }, 
               fontFamily: "outfit",
               fontWeight: "600",
             }}

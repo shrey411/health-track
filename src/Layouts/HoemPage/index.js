@@ -151,7 +151,7 @@ const HomePage = () => {
                         </main>
                     </section>
                     <section className="nursing-section mt-5">
-                        <main className="main-nursing">
+                        <main className="main-nursing"> 
                             <div className="nursing-container">
                                 <div className="header-box">
                                     <span>NURSING SERVICE</span>
@@ -292,7 +292,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="vehicle-details">
-                                <Grid container rowGap={4} columnSpacing={3} sx={{ width: "91%", margin: "0 0" }}>
+                                <Grid container spacing={4}  sx={{ width: "91%", margin: "0 0" }}>
                                     <Grid item xs={12} sm={4} md={4}>
                                         <VehicleCard imgSrc={VehicleImg1} title="Ambulance" description="From ₹55/km" />
                                     </Grid>

@@ -119,4 +119,44 @@ export const Wrapper = styled.section`
 
  }
 
+ @media (min-width: 900px) and ( max-width:1018px){
+
+  .Faq-left-part .question-header h3{
+    font-size: 32px; 
+  }
+  .question-container span{
+    font-size: 23px; 
+  }
+
+  .question-container p{
+    font-size: 17px; 
+
+  }
+ }
+
+ @media (min-width: 767px) and ( max-width:900px) {
+
+  .Faq-left-part .question-header h3{
+    font-size: 24px; 
+  }
+  .question-container span{
+    font-size: 20px; 
+  }
+
+  .question-container p{
+    font-size: 14px; 
+
+  }
+  .Faq-container .Faq-right-part {
+
+    height: 550px;
+  }
+  .Faq-right-part .faq-img-box{
+    height: 100%;
+  }
+  .Faq-right-part .faq-img-box img {
+    height: 100%;
+  }
+ }
+
 `
