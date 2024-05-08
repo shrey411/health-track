@@ -6,14 +6,18 @@ import {
   Typography,
   Button,
   Box,
+  useMediaQuery,
 } from "@mui/material";
-import { CareHospitalImg, UserThreeStarIcon } from "../../assets/Images";
-import styled from "styled-components";
-import { GrLocation, SlPhone } from "../../assets/Icons";
+import { BestSeller, CareHospitalImg, HospitalBed } from "../../assets/Images";
+import { GrLocation,  } from "../../assets/Icons";
 import Colors from "../../assets/Colors";
+import styled from "styled-components";
 // import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const HospitalCard = () => {
+
+  const isSmallScreen = useMediaQuery("(max-width: 426px)");
+
   return (
     // <AnimationOnScroll animateIn="animate__zoomInDown">
     <Card
@@ -45,31 +49,21 @@ const HospitalCard = () => {
           textAlign: { xs: "center", md: "left" },
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "baseline" }}>
+        <HospitalInfo>
+        <Box className="hospital-content" sx={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "baseline" }}>
           <Typography
             variant="h6"
-            sx={{ fontFamily: "outfit", fontSize: "30px", fontWeight: "500" }}
+            sx={{ color: `${Colors.FONT_COLOR1}`, fontFamily: "outfit", fontSize: "30px", fontWeight: "500" }}
           >
-            Care Hospital
+            Kiran Hospital Multi Super Specialist
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontFamily: "outfit", fontSize: "17px", fontWeight: "300", textAlign: "left" }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, egestas id
-            gravida.
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            sx={{
-              display: "flex",
-              gap: "10px",
-              fontFamily: "outfit",
-              fontSize: "16px",
-              fontWeight: "300",
-            }}
-          >
-            <img src={UserThreeStarIcon} alt="" /> Best Heart Surgeons
+            sx={{ color: `${Colors.FONT_COLOR1}`, fontFamily: "outfit", fontSize: "17px", fontWeight: "300", textAlign: "left"
+            ,display: "flex",alignItems:"center",
+            gap: "10px", }}
+          ><img src={BestSeller} alt="" />
+            SAMAST PATIDAR AAROGYA TRUST is a “NOT FOR PROFIT” Organization.
           </Typography>
           <Typography
             variant="body2"
@@ -79,31 +73,46 @@ const HospitalCard = () => {
               fontFamily: "outfit",
               fontSize: "16px",
               fontWeight: "300",
+              color: `${Colors.FONT_COLOR1}`
             }}
           >
-            <GrLocation size={25} color={Colors.BACKGROUND_COLOR6} />{" "}
-            Chandrasekharpur, Bhubaneswar
+            <img src={HospitalBed} alt="" /> 10 Bed’s
           </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              display: "flex",
+              gap: "10px",
+              fontFamily: "outfit",
+              fontSize: "16px",
+              fontWeight: "300",
+              textAlign: { sm: "left" },
+              color: `${Colors.FONT_COLOR1}`
+            }}
+          >
+            <GrLocation size={25} />{" "}
+            Nr Sumul Dairy, Katargam, Surat-395004, Gujarat, India.          </Typography>
           <Button
             variant="contained"
+            className="appointment-btn"
             sx={{
               padding: "0px 6px",
               justifyContent: "space-around",
-              width: "100%",
-              maxWidth: { xs: "50%", lg: "70%", md: "100%", sm: "70%"},
-              height: { lg:"40px", md:"35px",sm:"32px",xs: "35px"},
-              backgroundColor: Colors.BACKGROUND_COLOR6,
+              width: isSmallScreen ? "65%" : "100%",
+              maxWidth: { lg: "70%", md: "100%", sm: "75%", },
+              height: { lg: "40px", md: "35px", sm: "32px", xs: "35px" },
+              backgroundColor: Colors.BACKGROUND_COLOR1,
               fontFamily: "outfit",
               fontSize: "14px",
               fontWeight: "300",
-              color: Colors.BLACK,
-              "&:hover": { backgroundColor: Colors.BACKGROUND_COLOR6 },
+              color: Colors.WHITE,
+              "&:hover": { backgroundColor: Colors.BACKGROUND_COLOR1 },
             }}
-          >
-            <SlPhone size={20} color={Colors.BACKGROUND_COLOR1} /> Book
+          > Book
             Appointment
           </Button>
         </Box>
+        </HospitalInfo>
       </CardContent>
     </Card>
     // </AnimationOnScroll>
@@ -112,8 +121,39 @@ const HospitalCard = () => {
 
 export default HospitalCard;
 
-export const CardMediaWrapper = styled.div`
-  .card-meida-img {
-    width: 40%;
+export const HospitalInfo = styled.div`
+
+.hospital-content h6{
+  font-size: 30px;
+}
+
+@media (max-width: 1220px){
+  .hospital-content h6{
+    font-size: 24px;
   }
-`;
+  .hospital-content p{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 900px){
+  .hospital-content h6{
+    font-size: 30px;
+    text-align: left
+  }
+  .hospital-content p{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 680px){
+  .hospital-content h6{
+    font-size: 25px;
+  }
+  .hospital-content p{
+    font-size: 15px;
+    text-align: left;
+  }
+}
+`

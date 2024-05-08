@@ -5,7 +5,8 @@ export const Wrapper = styled.section`
 
 .container-fluid.main-header{
     padding: 0px;
-}
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
 .container-fluid .header-box{
     width: 92%;
 }
@@ -13,9 +14,9 @@ export const Wrapper = styled.section`
     display: flex;
     gap:20px;
     align-items: center;
-}
+}                 
 .navbar-toggler {
-    border-color: ${Colors.BLACK}; // Optional customization for the toggle button
+    border-color: ${Colors.BLACK}; // Optional customization for the toggle butto
   }
 
   .navbar-brand {
@@ -30,11 +31,11 @@ export const Wrapper = styled.section`
 
   .navbar-nav {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
   }
 
 .navbar-nav li{
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 .nav-link{
     color: ${Colors.BLACK};
@@ -65,6 +66,9 @@ export const Wrapper = styled.section`
       }
 
   }
+  
+
+  
 
 
 `

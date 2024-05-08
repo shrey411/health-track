@@ -54,7 +54,7 @@ const Nurses = () => {
     <Wrapper>
     <div className="container">
       <div className="text-center">
-        <h2 className="text">Compassionate Care at Home From Qualified and Trustworthy Nurses</h2>
+        <h2 className="text">Compassionate nursing services provided at home by a licensed professionals</h2>
       </div>
       <div className="Main">
         {ServicesData.map(service => (

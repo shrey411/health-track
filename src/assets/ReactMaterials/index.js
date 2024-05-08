@@ -33,7 +33,7 @@ export const settings = {
         infinite: true,
         dots: true
       }
-    },
+    },  
     {
       breakpoint: 700,
       settings: {
@@ -59,6 +59,23 @@ export const settings = {
       }
     }
   ]
+};
+
+
+export const settings3 = {
+  dots: true,
+  infinite: true,
+  // autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  appendDots: dots => (
+    <div
+    >
+      <ul style={{ margin: "0px" }}> {dots} </ul>
+    </div>
+  ),
+  
 };
 
 
@@ -209,7 +226,7 @@ export const PrevArrow = styled.div`
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
-    background-color: ${Colors.BACKGROUND_COLOR1};
+    background-color: ${Colors.FONT_COLOR1};
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -266,7 +283,7 @@ export const NextArrow = styled.div`
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
-    background-color: ${Colors.BACKGROUND_COLOR1};
+    background-color: ${Colors.FONT_COLOR1};
     width: 40px;
     height: 40px;
     border-radius: 20px;

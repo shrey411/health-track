@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   }
 
   .text {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 30px;
   }
 

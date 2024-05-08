@@ -14,6 +14,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { RiMenuFill } from "react-icons/ri";
 import { IoLayersOutline } from "react-icons/io5";
 import { RiSearchLine } from "react-icons/ri";
+import { BsFillPhoneFill } from "react-icons/bs";
+import { BiSolidOffer } from "react-icons/bi";
+import { FaPrescriptionBottleMedical } from "react-icons/fa6";
+import { SlChart } from "react-icons/sl";
 
 
 
@@ -32,4 +36,8 @@ export{
     RiMenuFill,
     IoLayersOutline,
     RiSearchLine,
+    BsFillPhoneFill,
+    BiSolidOffer,
+    FaPrescriptionBottleMedical,
+    SlChart,
 }

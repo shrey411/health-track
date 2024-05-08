@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Wrapper } from './Style'
-import { AppleImg, HealthCareLogo, HealthcareAppImg, PlaystoreImg } from '../../assets/Images'
+import {  Footer_Img, TechTricksLogo,  } from '../../assets/Images'
 import { Link } from 'react-router-dom'
-import { ImInstagram, ImLinkedin2, RiTwitterXFill, TfiFacebook } from '../../assets/Icons/index'
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
+import { BiSolidOffer, BsFillPhoneFill, FaPrescriptionBottleMedical, ImInstagram, ImLinkedin2, RiTwitterXFill, SlChart, TfiFacebook } from '../../assets/Icons/index'
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import PhoneInput from 'react-phone-number-input'
+import 'react-phone-number-input/style.css'
 
 const Footer = () => {
+    const [value, setValue] = useState()
+
     return (
         <>
             <Wrapper>
@@ -14,28 +18,78 @@ const Footer = () => {
                     <main className='main-footer'>
                         <div className='footer-part-1'>
                             <div className="footer-img-box ">
-                                <div className='healthcare-app-detail '>
+                                <div className='healthcare-app-detail mt-4 '>
                                     <div className='app-header'>
-                                        <h4>Download Techtricks App!</h4>
+                                        <h4>Download the all-in-one TTHC App</h4>
+                                        <span>Digital Care, Health at Home</span>
                                     </div>
                                     <div className='app-content'>
-                                        <p>Contrary to popular belief, Lorem
-                                            Ipsum is not simply random text.
-                                            It has roots in a piece of classical
-                                            Latin literature from
-                                        </p>
-                                    </div>
-                                    <div className='download-source'>
-                                        <div className='playstore-box'>
-                                            <img src={PlaystoreImg} alt='' />
+                                        <div className='phone-input'>
+                                            <PhoneInput
+                                                defaultCountry="IN"
+                                                value={value}
+                                                onChange={setValue}
+                                                placeholder="Phone Number" />
+                                            <div className='phone-btn'>
+                                                <button className='submit-button'>TEXT ME THE APP</button>
+                                            </div>
                                         </div>
-                                        <div className='apple-box'>
-                                            <img src={AppleImg} alt='' />
+                                        <div>
+                                            <p>AVAILABLE IN THE APP STORE AND PLAY STORE
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='healthcare-app-img'>
-                                    <img src={HealthcareAppImg} alt='' />
+                                    <div className='service-details'>
+                                        <div className='left-box'>
+                                            <div className='service-1'>
+                                                <div className='service1-icon'>
+                                                    <span><BsFillPhoneFill size={25} color='1463F3' /></span>
+                                                </div>
+                                                <div className='service-info'>
+                                                    <p>Book Services in a
+                                                        Few Clicks</p>
+                                                    <span>Better recovery is just
+                                                        a tap away.</span>
+                                                </div>
+                                            </div>
+                                            <div className='service-1'>
+                                                <div className='service1-icon'>
+                                                    <span><SlChart/></span>
+                                                </div>
+                                                <div className='service-info'>
+                                                    <p>Track Your Health</p>
+                                                    <span>Stay updated with
+                                                        your progress</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='healthcare-app-img'>
+                                            <img src={Footer_Img} alt='' />
+                                        </div>
+                                        <div className='left-box'>
+                                            <div className='service-1'>
+                                                <div className='service1-icon'>
+                                                    <span><BiSolidOffer /></span>
+                                                </div>
+                                                <div className='service-info'>
+                                                    <p>Get Offers on Bookings</p>
+                                                    <span>Exclusive offers on
+                                                        bookings via the app</span>
+                                                </div>
+                                            </div>
+                                            <div className='service-1'>
+                                                <div className='service1-icon'>
+                                                    <span><FaPrescriptionBottleMedical /></span>
+                                                </div>
+                                                <div className='service-info'>
+                                                    <p>Order Medicines
+                                                        Instantly</p>
+                                                    <span>All medicines delivered at
+                                                        your doorstep</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +97,7 @@ const Footer = () => {
                             <div className='main-part2'>
                                 <div className='social-media-box'>
                                     <div className='health-logo'>
-                                        <img src={HealthCareLogo} alt="" />
+                                        <img src={TechTricksLogo} alt="" />
                                     </div>
                                     <div>
                                         <p>When an unknown printer took a galley of
@@ -66,7 +120,7 @@ const Footer = () => {
                                         aria-controls="panel1-content"
                                         id="panel1-header"
                                     >
-                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Quick Links</span></Typography> {/* Dynamic title */}
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "23px", fontWeight: "500" }}>Quick Links</span></Typography> {/* Dynamic title */}
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <div>
@@ -100,12 +154,12 @@ const Footer = () => {
                                         aria-controls="panel1-content"
                                         id="panel1-header"
                                     >
-                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Catagories</span></Typography> {/* Dynamic title */}
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "23px", fontWeight: "500" }}>Catagories</span></Typography> {/* Dynamic title */}
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <div>
                                             <ul className='link-list'>
-                                                <Link to="/Nurses">Nursing Services</Link>
+                                                <Link to="/Nursing Services">Nursing Services</Link>
                                                 <Link to="#">Hospital Appointments</Link>
                                                 <Link to="#">Medicine Delivery</Link>
                                                 <Link to="#">Path lab Test</Link>
@@ -118,7 +172,7 @@ const Footer = () => {
                                 <div className='catagories-box'>
                                     <h5>Catagories</h5>
                                     <ul className='link-list'>
-                                        <Link to="/Nurses">Nursing Services</Link>
+                                        <Link to="/Nursing Services">Nursing Services</Link>
                                         <Link to="#">Hospital Appointments</Link>
                                         <Link to="#">Medicine Delivery</Link>
                                         <Link to="#">Path lab Test</Link>
@@ -134,7 +188,7 @@ const Footer = () => {
                                         aria-controls="panel1-content"
                                         id="panel1-header"
                                     >
-                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "25px", fontWeight: "500" }}>Company</span></Typography> {/* Dynamic title */}
+                                        <Typography><span style={{ fontFamily: "outfit", fontSize: "23px", fontWeight: "500" }}>Company</span></Typography> {/* Dynamic title */}
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <div>

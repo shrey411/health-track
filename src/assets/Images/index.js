@@ -1,4 +1,4 @@
-import HealthCareLogo from '../../All-Images/HealthCareLogo.png'
+import TechTricksLogo from '../../All-Images/TechTrickslogo.png'
 
 // HomePAge Images
 
@@ -11,13 +11,12 @@ import HeaderImg1 from '../../All-Images/HeaderImg1.png'
 import HeaderImg2 from '../../All-Images/HeaderImg2.png'
 import HeaderImg3 from '../../All-Images/HeaderImg3.png'
 
-import vectorImg1 from '../../All-Images/vectorImg1.png'
-import vectorImg2 from '../../All-Images/Vectorimg2.png'
 import vectorImg3 from '../../All-Images/Vectorimg3.png'
 
 // Footer Images
 
 import FooterBG from '../../All-Images/FooterBG.png'
+import Footer_Img from '../../All-Images/Footer_img.png'
 import HealthcareAppImg from '../../All-Images/HealthcareAppImg.png'
 import PlaystoreImg from '../../All-Images/PlaystoreImg.png'
 import AppleImg from '../../All-Images/AppleImg.png'
@@ -41,7 +40,8 @@ import ClientInfoTemp from '../../All-Images/ClientInfoTemplate.png'
 
 // Hospital-section img
 import CareHospitalImg from '../../All-Images/CareHospitalImg.png'
-import UserThreeStarIcon from '../../All-Images/UserThreeStartIcon.png'
+import BestSeller from '../../All-Images/best-seller.png'
+import HospitalBed from '../../All-Images/hospital-bed.png'
 
 // Transportation-vehicle-section img
 import VehicleImg1 from '../../All-Images/VehicleImg1.png'
@@ -71,22 +71,38 @@ import MedicalAttendant from '../../All-Images/MedicalAttendant.png'
 import Homeattend from '../../All-Images/Homeattend.png'
 import Expect from '../../All-Images/Expect.png'
 
+
+
+//    Nursing-service/Home Attend page img
+
+import HomeAttendSlider1 from '../../All-Images/HomeAttendSlider1.png'
+import InfectionService1 from '../../All-Images/InfectionService1.png'
+import InfectionService2 from '../../All-Images/InfectionService2.png'
+import InfectionService3 from '../../All-Images/InfectionService3.png'
+import InfectionService4 from '../../All-Images/InfectionService4.png'
+import InfectionService5 from '../../All-Images/InfectionService5.png'
+import InfectionService6 from '../../All-Images/InfectionService6.png'
+import InfectionService7 from '../../All-Images/InfectionService7.png'
+import InfectionService8 from '../../All-Images/InfectionService8.png'
+import InfectionService9 from '../../All-Images/InfectionService9.png'
+
 export { 
-    HealthCareLogo,
+    TechTricksLogo,
     HomePageBG,
     HomeSectionBG,HeaderMainImg,
     HeaderImg1,HeaderImg2,HeaderImg3,
-    vectorImg1,vectorImg2,vectorImg3,
-    FooterBG,HealthcareAppImg,PlaystoreImg,AppleImg,
+    vectorImg3,
+    FooterBG,HealthcareAppImg,PlaystoreImg,AppleImg,Footer_Img,
     CatagorieImg1,CatagorieImg2,CatagorieImg3,CatagorieImg4,CatagorieImg5,
     NursingService1,NursingService2,NursingService3,
     ClientInfoTemp,
     CareHospitalImg,
-    UserThreeStarIcon,
+    BestSeller,HospitalBed,
     VehicleImg1,    VehicleImg2, VehicleImg3,
     FiveStarIcon,
     NursingImg1,FirstKit1,FirstKit2,FirstKit3,FirstKit4,
     FAQsectionImg,
-    NursesPage, EmargencyNursing, Physiotherapy, ICUCareathome, MedicalAttendant, Homeattend, Expect
-
+    NursesPage, EmargencyNursing, Physiotherapy, ICUCareathome, MedicalAttendant, Homeattend, Expect,
+    HomeAttendSlider1,
+    InfectionService1,InfectionService2,InfectionService3,InfectionService4,InfectionService5,InfectionService6,InfectionService7,InfectionService8,InfectionService9,
 }

@@ -28,7 +28,6 @@ import {
     vectorImg3,
 } from "../../assets/Images";
 import { Wrapper } from "./Style";
-import Header from "../../Components/Header";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -53,9 +52,8 @@ const HomePage = () => {
     return (
         <>
             <Wrapper>
-                <section className="container-fluid home-section">
+                <section className="container-fluid home-section mt-1">
                     <main className="main-home-section">
-                        <Header />
                         <section className="home-container mt-4">
                             <div className="Health-Service-Form">
                                 <div className="header-section container">
@@ -151,7 +149,7 @@ const HomePage = () => {
                         </main>
                     </section>
                     <section className="nursing-section mt-5">
-                        <main className="main-nursing"> 
+                        <main className="main-nursing">
                             <div className="nursing-container">
                                 <div className="header-box">
                                     <span>NURSING SERVICE</span>
@@ -240,7 +238,7 @@ const HomePage = () => {
                                     </div>
                                 </div>
                                 <div className="hospitalCard-details">
-                                    <Grid container rowGap={4} columnSpacing={3} sx={{ width: "100%", margin: "0 0" }}>
+                                    <Grid container rowGap={4} columnSpacing={{ xs: 0, sm: 3, md: 3 }} sx={{ width: "100%", margin: "0 0" }}>
                                         {/* Row 1, Column 1 */}
                                         <Grid item xs={12} sm={6} md={6}>
                                             <HospitalCard />
@@ -292,8 +290,10 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="vehicle-details">
-                                <Grid container spacing={4}  sx={{ width: "91%", margin: "0 0" }}>
-                                    <Grid item xs={12} sm={4} md={4}>
+                                <Grid container rowSpacing={4} columnSpacing={{ xs: 0, sm: 3, md: 3 }} 
+                                    sx={{ width: { xs:"91%" ,sm:"91%",md:"91%"}, margin: "0 0" }}>
+                                    <Grid item xs={12} sm={4} md={4}
+                                    >
                                         <VehicleCard imgSrc={VehicleImg1} title="Ambulance" description="From ₹55/km" />
                                     </Grid>
                                     <Grid item xs={12} sm={4} md={4}>
@@ -304,13 +304,22 @@ const HomePage = () => {
                                     </Grid>
 
                                     {/* Row 2 */}
-                                    <Grid item xs={12} sm={4} md={4}>
+                                    <Grid item xs={12} sm={4} md={4}
+                                        sx={{
+                                            display: { xs: 'none', sm: 'block' },
+                                            paddingLeft: { xs: 0 }
+                                        }} // Hide on xs
+                                    >
                                         <VehicleCard imgSrc={VehicleImg3} title="Private" description="From ₹55/km" />
                                     </Grid>
-                                    <Grid item xs={12} sm={4} md={4}>
+                                    <Grid item xs={12} sm={4} md={4}
+                                        sx={{ display: { xs: 'none', sm: 'block' } }} // Hide on xs
+                                    >
                                         <VehicleCard imgSrc={VehicleImg1} title="Ambulance" description="From ₹55/km" />
                                     </Grid>
-                                    <Grid item xs={12} sm={4} md={4}>
+                                    <Grid item xs={12} sm={4} md={4}
+                                        sx={{ display: { xs: 'none', sm: 'block' } }} // Hide on xs
+                                    >
                                         <VehicleCard imgSrc={VehicleImg2} title="Private" description="From ₹55/km" />
                                     </Grid>
                                 </Grid>
@@ -330,7 +339,7 @@ const HomePage = () => {
                                         <span>TESTIMONIALS</span>
                                     </AnimationOnScroll>
                                 </div>
-                                <div className="client-rating-box">
+                                <div className=" client-rating-box">
                                     <div className="client-rating-info">
                                         <h3>What Our Client Says</h3>
                                     </div>

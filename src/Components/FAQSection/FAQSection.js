@@ -8,6 +8,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { FAQsectionImg } from '../../assets/Images';
+import Colors from '../../assets/Colors';
 
 
 
@@ -40,7 +41,7 @@ const FAQSection = () => {
                                             onChange={handleAccordionChange('panel1')}
                                         >
                                             <AccordionSummary 
-                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" }} />}
+                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" , color: expanded === 'panel1'? `${Colors.BACKGROUND_COLOR1}` : "inherit"}} />}
                                                 aria-controls="panel1-content"
                                                 id="panel1-header"
                                             >
@@ -54,7 +55,7 @@ const FAQSection = () => {
                                             onChange={handleAccordionChange('panel2')}
                                         >
                                             <AccordionSummary
-                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" }} />}
+                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" , color: expanded === 'panel2'? `${Colors.BACKGROUND_COLOR1}` : "inherit"}} />}
                                                 aria-controls="panel2-content"
                                                 id="panel2-header"
                                             >
@@ -68,7 +69,7 @@ const FAQSection = () => {
                                             onChange={handleAccordionChange('panel3')}
                                         >
                                             <AccordionSummary
-                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" }} />}
+                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" , color: expanded === 'panel3'? `${Colors.BACKGROUND_COLOR1}` : "inherit"}} />}
                                                 aria-controls="panel3-content"
                                                 id="panel3-header"
                                             >
@@ -82,7 +83,7 @@ const FAQSection = () => {
                                             onChange={handleAccordionChange('panel4')}
                                         >
                                             <AccordionSummary
-                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" }} />}
+                                                expandIcon={<ExpandMoreIcon style={{ fontSize: "2.5rem" , color: expanded === 'panel4'? `${Colors.BACKGROUND_COLOR1}` : "inherit"}} />}
                                                 aria-controls="panel4-content"
                                                 id="panel4-header"
                                             >

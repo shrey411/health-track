@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ClientInfoTemp, HomePageBG } from "../../assets/Images";
+import { HomePageBG } from "../../assets/Images";
 import Colors from "../../assets/Colors";
 
 export const Wrapper = styled.section`
@@ -35,6 +35,9 @@ export const Wrapper = styled.section`
     gap: 16px;
     padding: 0px;
   }
+  .header-section .box1-head h4,.box2-head h2{
+    color: ${Colors.FONT_COLOR1}
+  }
   .header-images {
     display: flex;
     flex-direction: column;
@@ -50,37 +53,6 @@ export const Wrapper = styled.section`
     width: 100%;
   }
 
-  .header-img4 {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-images .header-img1 .custom-img1 {
-    width: 100%;
-    height: 77%;
-    // margin-top: 15%;
-  }
-  .header-images .header-img4 .custom-img2 {
-    width: 76%;
-    margin-left: 13%;
-  }
-  .header-img1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-  }
-  .header-images .header-img3 img {
-    width: 100%;
-  }
-  .header-img2 {
-    width: 20%;
-    position: absolute;
-    right: 8%;
-    top: 70%;
-  }
-  .header-img2 .custom-img4 {
-    width: 100%;
-  }
   .header-section .box3-form {
     width: 100%;
   }
@@ -152,7 +124,7 @@ export const Wrapper = styled.section`
     outline: none;
   }
   .form-box3 button {
-    background: rgba(255, 60, 72, 1);
+    background: ${Colors.BACKGROUND_COLOR1};
     border: none;
     padding-left: 8px;
     color: ${Colors.WHITE};
@@ -227,6 +199,75 @@ export const Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 769px) {
+    .home-container {
+      grid-template-columns: 46% 54%;
+    }
+
+    .header-section .vectore-Img3 {
+      width: 40%;
+    }
+
+    .form-group {
+      gap: 20px;
+    }
+    .header-section.container {
+      gap: 10px;
+    }
+
+    .header-section .vectore-Img3 img {
+      width: 100%;
+    }
+    .form-box1,
+    .location-box,
+    .country-box {
+      height: 50px;
+      width: 100%;
+    }
+    .form-box2 {
+      height: 120px;
+      flex-direction: column;
+    }
+    .form-box3 {
+      height: 40px;
+    }
+    .box1-head h4 {
+      font-size: 17px;
+    }
+    .box2-head h2 {
+      font-size: 1.7rem;
+    }
+    .form-box3 .input-icon {
+      left: 32%;
+    }
+  }
+
+  @media (max-width: 621px) {
+    .home-container {
+      grid-template-columns: 100%;
+    }
+    .header-images {
+      display: none;
+    }
+    .box2-head h2 {
+      font-size: 2.1rem;
+    }
+    .box1-head h4 {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .box2-head h2 {
+      font-size: 1.7rem;
+    }
+    .box1-head h4 {
+      font-size: 18px;
+  }
+
+  }
+
+
   // Catagories-section
 
   .catagories-section {
@@ -267,12 +308,15 @@ export const Wrapper = styled.section`
     color: ${Colors.BACKGROUND_COLOR2};
   }
 
+
   .catagories-slider {
     width: 100%;
   }
 
   .catagories-slider .catagorie-img-box {
     // width: 350px;
+    display: flex;
+    justify-content: center;
   }
   .catagories-slider .catagorie-img-box img {
     width: 335px;
@@ -281,6 +325,7 @@ export const Wrapper = styled.section`
   .catagories-service .catagories-info p {
     font-weight: 300;
     font-family: outfit;
+    color: ${Colors.FONT_COLOR1};
   }
 
   .slick-dots ul li button:before {
@@ -293,7 +338,17 @@ export const Wrapper = styled.section`
   }
 
   .slick-dots ul li.slick-active button:before {
-    color: red; /* Change the color of the active dot here */
+    color: ${Colors.BACKGROUND_COLOR1}; /* Change the color of the active dot here */
+  }
+
+  @media (max-width: 769px) {
+    .catagories-slider .catagorie-img-box img {
+      width: 286px;
+    }
+    .catagorie-img-box {
+      display: flex !important;
+      justify-content: center;
+    }
   }
 
   // Nursing-service
@@ -331,12 +386,13 @@ export const Wrapper = styled.section`
   .nursing-service .nursing-info h3 {
     font-size: 36px;
     font-family: outfit;
-    color: ${Colors.BACKGROUND_COLOR2};
+    color: ${Colors.FONT_COLOR1};
   }
 
   .nursing-service .nursing-info p {
     font-weight: 300;
     font-family: outfit;
+    color: ${Colors.FONT_COLOR1};
   }
 
   .nursing-slider {
@@ -344,7 +400,7 @@ export const Wrapper = styled.section`
   }
 
   .nursing-moreInfo .more-info-btn {
-    background-color: ${Colors.BLACK};
+    background-color: ${Colors.FONT_COLOR1};
     color: ${Colors.WHITE};
     width: 160px;
     height: 40px;
@@ -356,20 +412,24 @@ export const Wrapper = styled.section`
     width: 100%;
   }
   .clients-template .client-container {
-    // background-image: url(${ClientInfoTemp});
-    // height: 200px;
-  }
-
-  .clients-template .client-container .client-details {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-image: url(${ClientInfoTemp});
+    justify-content: center;
+    background-color: ${Colors.FONT_COLOR1};
     height: 200px;
   }
 
+  .clients-template .client-container .client-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    gap: 30px;
+  }
+
   .client-details .info-box1 {
-    width: 24%;
+    // width: 24%;
   }
 
   .client-details .info-box1 p {
@@ -385,7 +445,7 @@ export const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 16%;
+    width: 80%;
   }
   .info-box4 h4,
   .info-box2 h4,
@@ -437,6 +497,56 @@ export const Wrapper = styled.section`
     .info-box3 h5 {
       font-size: 17px;
       width: 48%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-box1,
+    .info-box2,
+    .info-box3,
+    .info-box4 {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .info-box1 p {
+      font-size: 16px;
+    }
+
+    .info-box2 h4,
+    .info-box3 h4,
+    .info-box4 h4 {
+      font-size: 36px;
+    }
+
+    .info-box2 h5,
+    .info-box3 h5,
+    .info-box4 h5 {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .clients-template .client-container {
+      height: 280px;
+    }
+
+    .clients-template .client-container .client-details {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .client-details .info-box2,
+    .info-box3,
+    .info-box4 {
+      width: 100%;
+    }
+
+    .info-box4 h5,
+    .info-box2 h5,
+    .info-box3 h5 {
+      font-size: 18px;
+      width: 100%;
     }
   }
 
@@ -599,19 +709,31 @@ export const Wrapper = styled.section`
     }
     .vehicle-details {
       margin-top: -14%;
-  }
+    }
     .main-vehicle-section .vehicle-parts {
       height: 400px;
     }
     .vehicle-container .header-info p {
       font-size: 16px;
     }
-
   }
 
-  @media (max-width: px) {
-
-    
+  @media (max-width: 426px) {
+    .vehicle-container .header-info {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .vehicle-container .header-info h3 {
+      width: 100%;
+      font-size: 33px;
+    }
+    .vehicle-container .header-info p {
+      width: 100%;
+      font-size: 14px;
+    }
+    .vehicle-details {
+      margin-top: -22%;
+    }
   }
 
   // client-review-service
@@ -650,12 +772,13 @@ export const Wrapper = styled.section`
   .client-rating-box .client-rating-info h3 {
     font-size: 36px;
     font-family: outfit;
-    color: ${Colors.BACKGROUND_COLOR2};
+    color: ${Colors.FONT_COLOR1};
   }
 
   .client-rating-box .client-rating-info p {
     font-weight: 300;
     font-family: outfit;
+    color: ${Colors.FONT_COLOR1};
   }
 
   .client-rating-slider {
@@ -680,6 +803,7 @@ export const Wrapper = styled.section`
     font-family: outfit;
     font-weight: 400;
     text-align: center;
+    color: ${Colors.FONT_COLOR1};
   }
 
   .client-content-box1 .customer-box {
@@ -692,6 +816,7 @@ export const Wrapper = styled.section`
     font-size: 26px;
     font-family: outfit;
     font-weight: 500;
+    color: ${Colors.FONT_COLOR1};
   }
 
   .client-rating-slider .slick-dots {
@@ -722,18 +847,33 @@ export const Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 426px) {
+    .clientSlider-1 .client-content-box1 .client-review p {
+      font-size: 15px;
+    }
+    .clientSlider-1 .client-content-box1 .client-review {
+      width: 77%;
+    }
+    .customer-box h4 {
+      font-size: 24px;
+    }
+    .client-content-box1 .customer-box span {
+      font-size: 17px;
+    }
+  }
+
   //  hc-process-container
 
   .hc-process-section {
     width: 100%;
-    // background-color: ${Colors.BACKGROUND_COLOR2};
+    // background-color: ${Colors.FONT_COLOR1};
   }
 
   .process-box {
     display: grid;
     grid-template-columns: 55% 45%;
     align-items: center;
-    background-color: ${Colors.BACKGROUND_COLOR2};
+    background-color: ${Colors.FONT_COLOR1};
   }
 
   .process-box .header-box {
@@ -830,13 +970,13 @@ export const Wrapper = styled.section`
   .nursing-img-box {
     // width: 45%;
     width: 100%;
+    height: 100%;
   }
   .nursing-img-box img {
     width: 100%;
   }
 
   @media (max-width: 1290px) {
-
     .process-box .header-box {
       gap: 50px;
     }
@@ -846,45 +986,39 @@ export const Wrapper = styled.section`
     .horizontal-line {
       width: 73%;
       transform: translateX(18.5%);
-    } 
+    }
   }
 
   @media (max-width: 1230px) {
-
-    .content h5{
-       font-size: 1.2rem;
+    .content h5 {
+      font-size: 1.2rem;
     }
     .process-box .header-box .sub-box1 p {
       font-size: 20px;
-
     }
     .horizontal-line {
       width: 74%;
-
     }
   }
 
   @media (max-width: 1198px) {
-
     .process-box .header-box .sub-box1 h2 {
       font-size: 35px;
     }
     .process-box .header-box {
       gap: 35px;
     }
-    .content h5{
+    .content h5 {
       font-size: 1.1rem;
-   }
-
+    }
   }
 
   @media (max-width: 1130px) {
-    .content h5{
+    .content h5 {
       font-size: 1rem;
-   }
+    }
   }
   @media (max-width: 1076px) {
-
     .process-box .header-box .sub-box1 h2 {
       font-size: 33px;
     }
@@ -892,17 +1026,16 @@ export const Wrapper = styled.section`
       font-size: 19px;
     }
     .step-circle img {
-       width: 35px;
-       height: 35px
+      width: 35px;
+      height: 35px;
     }
     .step-circle {
-        width: 75px;
-        height: 75px;
+      width: 75px;
+      height: 75px;
     }
   }
 
   @media (max-width: 1060px) {
-
     .process-box .header-box .service-steps {
       width: 75%;
     }
@@ -911,9 +1044,79 @@ export const Wrapper = styled.section`
     }
   }
 
-  
+  @media (min-width: 767px) and (max-width: 1010px) {
+    .process-box .header-box .sub-box1 h2 {
+      font-size: 23px;
+    }
+    .process-box .header-box .sub-box1 p {
+      font-size: 16px;
+    }
+    .step-circle img {
+      width: 30px;
+      height: 30px;
+    }
+    .step-circle {
+      width: 65px;
+      height: 65px;
+    }
+    .nursing-img-box {
+      height: 400px;
+    }
+    .step-box .content h5 {
+      font-size: 13px;
+    }
+    .nursing-img-box img {
+      height: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .process-box {
+      grid-template-columns: 100%;
+    }
+    .nursing-img-box {
+      display: none;
+    }
+    .process-box .header-box .sub-box1 {
+      width: 80%;
+      padding: 30px 0px;
+    }
+    .process-box .header-box .service-steps {
+      width: 87%;
+    }
+    .horizontal-line {
+      width: 58%;
+      transform: translateX(0%);
+    }
+  }
 
+  @media (max-width: 426px) {
+    .step-circle {
+      width: 55px;
+      height: 55px;
+    }
 
+    .step-circle img {
+      width: 25px;
+      height: 25px;
+    }
+    .horizontal-line {
+      width: 58%;
+      top: 25px;
+    }
+  }
+
+  @media (max-width: 350px) {
+        .process-box .header-box .service-steps {
+            width: 100%;
+        }
+        .header-box .service-steps {
+          gap: 16px;
+      }
+        .step-circle {
+          width: 55px;
+          height: 55px;
+        }
+      }
   //   @media (max-width: 1024px) {
   //     /* Reduce padding and spacing */
   //     .process-box {
@@ -966,4 +1169,19 @@ export const Wrapper = styled.section`
   //       width: 40%; /* Reduce image box width */
   //     }
   //   }
+  @media (max-width: 426px) {
+    .catagories-service .catagories-info h3,
+    .hospitals-service .hospitals-info h3,
+    .client-rating-box .client-rating-info h3,
+    .nursing-service .nursing-info h3 {
+      font-size: 32px;
+    }
+    .navbar-brand {
+      width: 46%;
+    }
+    .navbar-brand img {
+      width: 100%;
+    }
+    
+  }
 `;

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { FooterBG } from "../../assets/Images";
 import Colors from "../../assets/Colors";
 
 export const Wrapper = styled.section`
   .container-fluid.footer-section {
     padding: 0px;
     margin: 0px;
+    position: relative;
   }
   .main-footer {
     display: flex;
@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
   }
 
   .footer-part-1 {
-    background-image: url(${FooterBG});
+    background-color: #d8e7ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,35 +28,126 @@ export const Wrapper = styled.section`
   .healthcare-app-detail {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
+    align-items: center;
+    gap: 35px;
+    
+  }
+  .healthcare-app-detail .service-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    width: 85%;
+  }
+  .healthcare-app-detail .app-header ,
+  .healthcare-app-detail .app-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
   .healthcare-app-detail .app-header h4 {
-    font-size: 45px;
+    font-size: 40px;
     font-family: outfit;
-    color: ${Colors.WHITE};
     font-weight: 700;
   }
 
   .healthcare-app-detail .app-content p {
-    font-size: 26px;
-    font-family: outfit;
-    color: ${Colors.WHITE};
+    font-size: 14px;
+    font-weight: 500;
+    color: #525252;
   }
 
-  .healthcare-app-detail .download-source {
+  .phone-input{
     display: flex;
     align-items: center;
+  }
+  .phone-input .phone-btn {
+    width: 150px;
+    height: 50px;
+  }
+  .submit-button {
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #1463f3; 
+    color: ${Colors.WHITE};
+  }
+  .phone-input .PhoneInputCountry {
+    width: 62px;
+    height: 50px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    disply: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .phone-input .PhoneInputInput {
+    border: none;
+    flex: none;
+    width: 250px;
+    height: 50px;
+    background-color: #f8f8f9;
+    outline: none;
+    padding-left: 10px; 
+  }
+  .healthcare-app-detail .service-details .left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .healthcare-app-detail .service-details .left-box .service-1 {
+    display: flex;
     justify-content: space-between;
-    width: 65%;
+  }
+  .service1-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d8e7ff;
+    border: 1px solid #1463f3;
+    box-shadow: 0px 1.5px 6.5px 0px #1463f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .service1-icon span {
+    font-size: 25px;
+    color: #1463f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-1 .service-info p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212529;
+  }
+  .service-1 .service-info span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #525252;
+  }
+  .service-details .left-box .service-1 .service-info {
+    width: 70%;
   }
 
   .healthcare-app-img {
-    width: 80%;
+    display: flex;
+    justify-content: center;
   }
 
   .healthcare-app-img img {
-    width: 100%;
+    width: 70%;
   }
 
   // Footer-part-2
@@ -87,11 +178,11 @@ export const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    width: 95%;
   }
   .media-icon-box .icon-link {
     display: flex;
-    gap: 10px;
+    gap: 25px;
     padding: 0px;
   }
   .media-icon-box .icon-link a {
@@ -203,6 +294,35 @@ export const Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 1200px) {
+    .healthcare-app-detail .service-details {
+      grid-template-columns: 2fr 2fr;
+      gap: 35px;
+      width: 95%;
+  }
+
+  .healthcare-app-detail .service-details .left-box {
+     justify-content: normal; 
+    gap: 35px;
+  }
+
+    .service-details {
+      flex-basis: 50%;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .healthcare-app-detail .service-details .left-box .service-1 {
+      width: 100%;
+  }
+  .healthcare-app-img {
+    grid-row: span 2;
+  }
+  .healthcare-app-img  img{
+    width: 90%;
+  }
+}
+
   @media (max-width: 600px) {
     .footer-part-2 .main-part2 {
       grid-template-columns: 1fr;
@@ -213,16 +333,82 @@ export const Wrapper = styled.section`
       display: none;
     }
 
-    .footer-accordion{
-        display: block;
-        border-bottom : 1px solid gray;
-        box-shadow: none;
+    .footer-accordion {
+      display: block;
+      border-bottom: 1px solid gray;
+      box-shadow: none;
+    }
+
+    .footer-accordion::before {
+      background-color: none;
+    }
+
+    .media-icon-box {
+      width: 65%;
+    }
+
+    .media-icon-box .icon-link {
+      width: 57%;
+      justify-content: space-between;
+    }
+
+    .healthcare-app-img {
+      display: none;
+    }
+    .healthcare-app-detail {
+      padding: 20px 0px;
+    }
+    .healthcare-app-detail .app-header h4 {
+      font-size: 30px;
     }
     
-    .footer-accordion::before{
-        background-color: none;
-
+    .phone-input .PhoneInputInput {
+      height: 40px;
+      width: 168px;
     }
-
+    .phone-input .PhoneInputCountry {
+      height: 40px;
+    }
+    .healthcare-app-detail .service-details {
+      grid-template-columns: 1fr;
+    }
+    .phone-input .phone-btn {
+      width: 139px;
+      height: 40px;
+      font-size: 14px;
+    }
   }
+  @media (max-width: 450px) {
+    .phone-input .phone-btn {
+      width: 100px;
+    }
+    .submit-button {
+      font-size: 12px;
+    }
+    .healthcare-app-detail .app-header h4 {
+      font-size: 23px;
+   }
+   .healthcare-app-detail .app-content p {
+    font-size: 15px;
+   }
+   .media-icon-box {
+    width: 85%;
+   }
+  }
+
+  @media (max-width: 450px) {
+   .media-icon-box {
+     width: 95%;
+    }
+  }
+
+  @media (max-width: 350px) {
+        .phone-input .PhoneInputInput {
+            height: 40px;
+            width: 140px;
+        }
+        .phone-input .phone-btn {
+          width: 70px;
+      }
+    }
 `;
