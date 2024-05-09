@@ -5,7 +5,7 @@ import { TechTricksLogo } from '../../assets/Images';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { IoPersonOutline, MdKeyboardArrowDown, RiMenuFill } from '../../assets/Icons';
+import { IoPersonOutline, MdKeyboardArrowDown, MdKeyboardArrowUp, RiMenuFill } from '../../assets/Icons';
 
 import styled from 'styled-components';
 
@@ -54,7 +54,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="#" onClick={toggleDropdown}>
-                    Home Care Service {isDropdownOpen ? <IoPersonOutline size={20}/> : <MdKeyboardArrowDown size={20}/>}
+                    Home Care Service {isDropdownOpen ? <MdKeyboardArrowUp size={20}/> : <MdKeyboardArrowDown size={20}/>}
                   </Link>
                   <DropdownContainer>
                     <DropdownMenu isOpen={isDropdownOpen}>

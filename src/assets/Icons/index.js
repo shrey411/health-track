@@ -1,4 +1,5 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import { IoPersonOutline } from "react-icons/io5";
 import { TfiFacebook } from "react-icons/tfi";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -18,11 +19,13 @@ import { BsFillPhoneFill } from "react-icons/bs";
 import { BiSolidOffer } from "react-icons/bi";
 import { FaPrescriptionBottleMedical } from "react-icons/fa6";
 import { SlChart } from "react-icons/sl";
+import { FaPlus } from "react-icons/fa6";
+import { GrClose } from "react-icons/gr";
 
 
 
 export{
-    MdKeyboardArrowDown,
+    MdKeyboardArrowDown,MdKeyboardArrowUp,
     IoPersonOutline,
     TfiFacebook,
     RiTwitterXFill,
@@ -40,4 +43,5 @@ export{
     BiSolidOffer,
     FaPrescriptionBottleMedical,
     SlChart,
+    FaPlus,GrClose
 }

@@ -86,6 +86,23 @@ import InfectionService7 from '../../All-Images/InfectionService7.png'
 import InfectionService8 from '../../All-Images/InfectionService8.png'
 import InfectionService9 from '../../All-Images/InfectionService9.png'
 
+//    Nursing-service/Home Attend page Faq-section  img
+import HomeNursingVideoImg from '../../All-Images/HomeNursingVideoImg.png'
+
+import CertificationSkill1  from '../../All-Images/CertSkill1.png'
+import CertificationSkill2  from '../../All-Images/CertSkill2.png'
+import CertificationSkill3  from '../../All-Images/CertSkill3.png'
+
+import Expectation1  from '../../All-Images/Expectation1.png'
+import Expectation2  from '../../All-Images/Expectation2.png'
+import Expectation3  from '../../All-Images/Expectation3.png'
+import Expectation4  from '../../All-Images/Expectation4.png'
+
+import MedicalStaffImg1 from '../../All-Images/MedicalStaffImg1.png'
+import MedicalStaffImg2 from '../../All-Images/MedicalStaffImg2.png'
+import MedicalStaffImg3 from '../../All-Images/MedicalStaffImg3.png'
+import MedicalStaffImg4 from '../../All-Images/MedicalStaffImg4.png'
+
 export { 
     TechTricksLogo,
     HomePageBG,
@@ -105,4 +122,8 @@ export {
     NursesPage, EmargencyNursing, Physiotherapy, ICUCareathome, MedicalAttendant, Homeattend, Expect,
     HomeAttendSlider1,
     InfectionService1,InfectionService2,InfectionService3,InfectionService4,InfectionService5,InfectionService6,InfectionService7,InfectionService8,InfectionService9,
+    HomeNursingVideoImg,
+    CertificationSkill1,CertificationSkill2,CertificationSkill3,
+    Expectation1,Expectation2,Expectation3,Expectation4,
+    MedicalStaffImg1,MedicalStaffImg2,MedicalStaffImg3,MedicalStaffImg4,
 }

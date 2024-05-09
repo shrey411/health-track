@@ -395,16 +395,7 @@ export const Wrapper = styled.section`
     color: ${Colors.FONT_COLOR1};
   }
 
-  .nursing-slider {
-    width: 100%;
-  }
-
-  .nursing-moreInfo .more-info-btn {
-    background-color: ${Colors.FONT_COLOR1};
-    color: ${Colors.WHITE};
-    width: 160px;
-    height: 40px;
-  }
+  
 
   //  clients-template
 
