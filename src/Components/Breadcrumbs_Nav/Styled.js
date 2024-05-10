@@ -46,7 +46,6 @@ export const Wrapper = styled.section`
     color: ${Colors.FONT_COLOR1}; 
   }
   
-
   @media (max-width: 1024px) {
 
     .breadcrumb-item {
