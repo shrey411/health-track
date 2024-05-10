@@ -107,7 +107,7 @@ function SampleNextArrow(props) {
   return (
     <NextArrow>
       <button
-        className="NextButton"
+        className="NextButton NextBtn"
         onClick={onClick}
       >
         <IoIosArrowForward /> {/* Icon size and color */}
@@ -145,7 +145,6 @@ export const settings1 = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
       },
     },
     {
@@ -154,7 +153,6 @@ export const settings1 = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
       }
     },
     {
@@ -163,7 +161,6 @@ export const settings1 = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
       }
     },
     {
@@ -212,7 +209,33 @@ export const settings2 = {
   
 };
 
+function Slider2NextArrow(props) {
+  const { onClick } = props;
+  return (
+    <Slider2NextedArrow>
+      <button
+        className="NextButton NextBtn"
+        onClick={onClick}
+      >
+        <IoIosArrowForward /> {/* Icon size and color */}
+      </button>
+    </Slider2NextedArrow>
+  );
+}
 
+function Slider2PrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <Slider2PreviousArrow>
+      <button
+        className="PrevButton"
+        onClick={onClick}
+      >
+        <IoIosArrowBack /> {/* Icon size and color */}
+      </button>
+    </Slider2PreviousArrow>
+  );
+}
 
 export const settings4 = {
   dots: false,
@@ -220,16 +243,23 @@ export const settings4 = {
   // autoplay: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  nextArrow: <Slider2NextArrow />,
+  prevArrow: <Slider2PrevArrow />,
   responsive: [
+    {
+      breakpoint: 1100, // Adjust this breakpoint to suit your needs
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
     {
       breakpoint: 1024, // Adjust this breakpoint to suit your needs
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
       },
     },
     {
@@ -238,7 +268,6 @@ export const settings4 = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
       }
     },
     {
@@ -247,7 +276,6 @@ export const settings4 = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
       }
     },
     {
@@ -289,6 +317,11 @@ export const PrevArrow = styled.div`
     border-radius: 20px;
     color: ${Colors.WHITE};
     border: none;
+
+    .NextBtn{
+      top: 30%;
+    }
+
   }
 
   @media (max-width: 1415px){
@@ -380,6 +413,178 @@ export const NextArrow = styled.div`
 @media (max-width: 665px){
   .NextButton{
      top: 42%;
+  }
+}
+
+`
+
+
+
+export const Slider2PreviousArrow = styled.div`
+
+  .PrevButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 2px;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    background-color: ${Colors.FONT_COLOR1};
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    color: ${Colors.WHITE};
+    border: none;
+
+    .NextBtn{
+      top: 30%;
+    }
+
+  }
+
+  @media (max-width: 1415px){
+    .PrevButton{
+      top: 38%;
+  }
+}
+  @media (max-width: 1300px){
+    .PrevButton{
+      top: 35%;
+  }
+}
+  @media (max-width: 1145px){
+    .PrevButton{
+       top: 32%;
+    }
+  }
+  @media (max-width: 1100px){
+    .PrevButton{
+       top: 36%;
+    }
+  }
+  @media (max-width: 1024px){
+    .PrevButton{
+       top: 38%;
+    }
+  }
+  @media (max-width: 943px){
+    .PrevButton{
+       top: 35%;
+    }
+  }
+
+  @media (max-width: 769px){
+    .PrevButton{
+       top: 40%;
+    }
+  }
+  
+  @media (max-width: 675px){
+    .PrevButton{
+       top: 36%;
+    }
+  }
+  @media (max-width: 477px){
+    .PrevButton{
+       top: 44%;
+    }
+  }
+  @media (max-width: 426px){
+    .PrevButton{
+       top: 42%;
+    }
+  }
+
+  @media (max-width: 320px){
+    .PrevButton{
+       top: 36%;
+    }
+  }
+
+`
+
+export const Slider2NextedArrow = styled.div`
+
+  .NextButton
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    right: -2px;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    background-color: ${Colors.FONT_COLOR1};
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    color: ${Colors.WHITE};
+    border: none;
+  }
+
+
+  @media (max-width: 1415px){
+    .NextButton{
+      top: 38%;
+  }
+
+}
+@media (max-width: 1300px){
+  .NextButton{
+    top: 35%;
+}
+}
+
+@media (max-width: 1145px){
+  .NextButton{
+     top: 32%;
+  }
+}
+
+@media (max-width: 1100px){
+  .NextButton{
+     top: 36%;
+  }
+}
+@media (max-width: 1024px){
+  .NextButton{
+     top: 38%;
+  }
+}
+@media (max-width: 943px){
+  .NextButton{
+     top: 35%;
+  }
+}
+@media (max-width: 769px){
+  .NextButton{
+     top: 40%;
+  }
+}
+
+@media (max-width: 676px){
+  .NextButton{
+     top: 36%;
+  }
+}
+@media (max-width: 477px){
+  .NextButton{
+     top: 44%;
+  }
+}
+@media (max-width: 426px){
+  .NextButton{
+     top: 42%;
+  }
+}
+@media (max-width: 320px){
+  .NextButton{
+    top: 36%;
   }
 }
 

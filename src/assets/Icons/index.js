@@ -21,6 +21,8 @@ import { FaPrescriptionBottleMedical } from "react-icons/fa6";
 import { SlChart } from "react-icons/sl";
 import { FaPlus } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
+import { RiGraduationCapLine } from "react-icons/ri";
+import { PiMoneyFill } from "react-icons/pi";
 
 
 
@@ -43,5 +45,6 @@ export{
     BiSolidOffer,
     FaPrescriptionBottleMedical,
     SlChart,
-    FaPlus,GrClose
+    FaPlus,GrClose,
+    RiGraduationCapLine,PiMoneyFill,
 }

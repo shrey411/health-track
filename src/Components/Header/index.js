@@ -160,6 +160,10 @@ export default Header;
 export const DropdownContainer = styled.div`
   position: relative;
   top: 82%;
+
+  @media (max-width:1350px) {
+    top: 35%;
+  }
 `;
 
 export const DropdownButton = styled.div`

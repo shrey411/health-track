@@ -131,7 +131,115 @@ export const Wrapper = styled.section`
         background-color: ${Colors.BACKGROUND_COLOR1};
   }
 
+  @media(max-width: 1024px){
+    .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
+      font-size: 40px;
+    }
+    .HomeAttend-service .main-attend-Box .sub-attend-box {
+      grid-template-columns: 63% 35%;
+      gap: 20px;
+    }
+    .home-Appointment-box .HomeAttendent-form {
+      width: 100%;
+    }
+    .services-info .info-question h2 {
+      font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .HomeAttend-service .main-attend-Box .sub-attend-box {
+    grid-template-columns: 100%; // Full-width for smaller screens
+    gap: 20px;
+  }
 
+  .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
+    font-size: 30px; // Reduce font size for smaller screens
+  }
+
+  .services-info .info-question h2 {
+    font-size: 28px;
+  }
+
+  .services-info .info-question p {
+    font-size: 18px;
+  }
+
+  .HomeAttendent-form .form-box input {
+    height: 50px; // Adjust input height for smaller screens
+  }
+
+  .HomeAttendent-form .form-section .form-btn button {
+    height: 50px; // Adjust button height
+  }
+
+  .home-Appointment-box .HomeAttendent-form {
+    padding: 15px; // Adjust padding for smaller screens
+  }
+}
+
+@media (max-width: 650px) {
+  .services-info .info-question h2 {
+    font-size: 26px;
+  }
+
+  .services-info .info-question p {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 426px) {
+ .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
+        font-size: 26px;
+      }
+  .services-info .info-question h2 {
+    font-size: 22px;
+  }
+
+  .services-info .info-question p {
+    font-size: 17px;
+  }
+  .HomeAttendent-form .form-header h3{
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
+         font-size: 24px;
+       }
+   .services-info .info-question h2 {
+     font-size: 20px;
+   }
+ 
+   .services-info .info-question p {
+     font-size: 16px;
+   }
+   .HomeAttendent-form .form-header h3{
+     font-size: 24px;
+   }
+ 
+ }
+ @media (max-width: 330px) {
+  .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
+         font-size: 24px;
+         width: 89%;
+  }
+   .services-info .info-question h2 {
+     font-size: 20px;
+   }
+ 
+   .services-info .info-question p {
+     font-size: 16px;
+   }
+   .HomeAttendent-form .form-header h3{
+     font-size: 22px;
+   }
+ 
+ }
+ 
+ 
   //  HomeNursing-section
 
   .HomeNursingService .main-HomeNursing {
@@ -169,6 +277,39 @@ export const Wrapper = styled.section`
     width: 100%;
   }
 
+  @media ( max-width:1024px) {
+    .HomeNursing-video .video-box {
+      width: 85%;
+    }
+  }
+  @media (max-width: 769px) {
+    .HomeNursing-video .video-box {
+      width: 90%;
+    }
+  }
+  @media (max-width: 650px) {
+    .main-HomeNursing .HomeNursing-container {
+      grid-template-columns: none;
+      grid-template-rows: 1fr .9fr;
+    }
+    .HomeNursing-video .video-box {
+      width: 80%;
+    }
+    .HomeNursing-container .HomeNursing-video {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .HomeNursing-video .video-box {
+      width: 90%;
+    }
+  }
+
+
+
+
+
 // Nursing-skill section
 
 .Nursing-skilled-container .main-NursingSkill {
@@ -201,6 +342,8 @@ export const Wrapper = styled.section`
   font-weight: 300;
 }
 
+
+
 .NursingSkill-certificate {
   width: 100%;
     display: flex;
@@ -227,6 +370,94 @@ export const Wrapper = styled.section`
 .Certificate-container .certificate-3 img{
   width: 38%;
 }
+
+.Certificate-container .certificate-1 h5,
+.Certificate-container .certificate-2 h5,
+.Certificate-container .certificate-3 h5 {
+  text-align: center;
+  
+}
+
+@media (max-width: 1024px) {
+  .NursingSkill-Box .NursingSkill-ques h3 {
+    font-size: 38px;
+  }
+  .NursingSkill-Box .NursingSkill-answer p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NursingSkill-Box .NursingSkill-ques h3 {
+    font-size: 32px;
+  }
+  .NursingSkill-Box .NursingSkill-answer p {
+    font-size: 18px;
+  }
+  .NursingSkill-certificate .Certificate-container {
+    gap: 15px;
+  }
+  .Certificate-container .certificate-1 img,  .Certificate-container .certificate-2 img,  .Certificate-container .certificate-3 img {
+    width: 60%;
+  }
+  .Certificate-container .certificate-1 h5,
+  .Certificate-container .certificate-2 h5,
+  .Certificate-container .certificate-3 h5{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .NursingSkill-Box .NursingSkill-ques h3 {
+    font-size: 30px;
+  }
+  .NursingSkill-Box .NursingSkill-answer p {
+    font-size: 16px;
+  }
+  .NursingSkill-certificate .Certificate-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  .Certificate-container .certificate-3 {
+    grid-column: span 2;
+  }
+  .Certificate-container .certificate-3 img {
+    width: 35%;
+  }
+}
+
+@media (max-width: 426px) {
+  .NursingSkill-Box .NursingSkill-ques h3 {
+    font-size: 26px;
+  }
+  .NursingSkill-Box .NursingSkill-answer p {
+    font-size: 14px;
+  }
+  .Certificate-container .certificate-1 img,  .Certificate-container .certificate-2 img,  .Certificate-container .certificate-3 img {
+    width: 70%;
+  }
+  .Certificate-container .certificate-3 img {
+    width: 35%;
+  }
+}
+
+@media (max-width: 400px) {
+  .NursingSkill-Box .NursingSkill-ques h3 {
+    font-size: 24px;
+  }
+  .NursingSkill-Box .NursingSkill-answer p {
+    font-size: 13px;
+  }
+}
+
+  @media (max-width: 340px) {
+    .NursingSkill-Box .NursingSkill-ques h3 {
+      font-size: 20px;
+    }
+    .NursingSkill-Box .NursingSkill-answer p {
+      font-size: 12px;
+    }
+ }
 
 
 .NursingExpect-section {
@@ -265,11 +496,19 @@ export const Wrapper = styled.section`
   gap: 10px;
 }
 
+.expectation-box1 .expectation-img ,
+.expectation-box2 .expectation-img ,
+.expectation-box3 .expectation-img ,
+.expectation-box4 .expectation-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .expectation-box1 .expectation-img img,
 .expectation-box2 .expectation-img img,
 .expectation-box3 .expectation-img img,
 .expectation-box4 .expectation-img img{
-  width: 85%;
+  width: 70%;
 }
 
 .expectation-box1 .expectation-text p,
@@ -279,7 +518,63 @@ export const Wrapper = styled.section`
   font-size: 18px;
   font-family: outfit;
   font-weight: 400;
+  text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .NursingExpect-section .NursingExpect-header h3 {
+    font-size: 38px;
+  }
+  .expectation-box1 .expectation-img img,
+  .expectation-box2 .expectation-img img,
+  .expectation-box3 .expectation-img img,
+  .expectation-box4 .expectation-img img  {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .NursingExpect-section .NursingExpect-header h3 {
+    font-size: 32px;
+  }
+
+  .NursingExpect-items .expectation-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5%;
+    column-gap: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .NursingExpect-section .NursingExpect-header h3 {
+    font-size: 32px;
+
+  }
+}
+
+@media (max-width: 426px) {
+  .NursingExpect-section .NursingExpect-header h3 {
+    font-size: 28px;
+
+  }}
+
+@media (max-width: 400px) {
+  .NursingExpect-section .NursingExpect-header h3 {
+    font-size: 25px;
+  }
+}
+
+  @media (max-width: 340px) {
+    .NursingExpect-section .NursingExpect-header h3 {
+      font-size: 24px;
+  
+    }
+ }
+
+
+
+
+// NursingPlaces
 
 .NursingPlace-service {
   width: 92%;
@@ -302,6 +597,55 @@ export const Wrapper = styled.section`
   font-weight: 400;
 }
 
+@media (max-width: 1024px) {
+
+  .NursingPlace-header h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NursingPlace-header h3 {
+    font-size: 32px;
+
+  }
+  .NursingPlace-service .NursingPlace-content p,  .NursingPlace-service .NursingPlace-content ul li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .NursingPlace-header h3 {
+    font-size: 32px;
+  }
+  .NursingPlace-service .NursingPlace-content p,  .NursingPlace-service .NursingPlace-content ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 426px) {
+  .NursingPlace-header h3 {
+    font-size: 28px;
+  }
+  .NursingPlace-service .NursingPlace-content p,  .NursingPlace-service .NursingPlace-content ul li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .NursingPlace-header h3 {
+    font-size: 25px;
+  }
+  }
+
+  @media (max-width: 340px) {
+    .NursingPlace-header h3 {
+      font-size: 24px;
+  
+    }
+ }
+
+
 //  NursingService-slider
 
   .NursingService-slider,
@@ -314,6 +658,50 @@ export const Wrapper = styled.section`
     font-family: outfit;
     font-weight: 500;
   } 
+
+@media (max-width: 768px) {
+  .NursingService-header h3 ,
+  .medicalstaff-header h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .NursingService-header h3 ,
+  .medicalstaff-header h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 426px) {
+  .NursingService-header h3 ,  .medicalstaff-header h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .NursingService-header h3 ,  .medicalstaff-header h3 {
+    font-size: 25px;
+  }
+  .expectation-box1 .expectation-text p,  .expectation-box2 .expectation-text p,  .expectation-box3 .expectation-text p,  .expectation-box4 .expectation-text p {
+    font-size: 16px;
+  }
+
+}
+
+  @media (max-width: 340px) {
+    .NursingService-header h3 ,  .medicalstaff-header h3{
+
+      font-size: 24px;
+    }
+    .expectation-box1 .expectation-text p,  .expectation-box2 .expectation-text p,  .expectation-box3 .expectation-text p,  .expectation-box4 .expectation-text p {
+      font-size: 14px;
+    } 
+ }
+
+
+  // CaregiverPlan section
+
 
   .CaregiverPlan-container {
     width: 100%;
@@ -367,7 +755,50 @@ export const Wrapper = styled.section`
   .Time-Box2 p {
     font-size: 21px;
   } 
-}
+
+  @media (max-width: 1024px){
+    .CaregiverPlan-template .Temp-header h3{
+      font-size: 38px;
+    }
+    .Time-Box1 p ,
+    .Time-Box2 p {
+      font-size: 17px;
+    } 
+  }
+
+  @media (max-width: 820px) {
+
+    .CaregiverPlan-section .CaregiverPlan-template {
+      grid-template-columns: none;
+      grid-template-rows: .5fr 1fr;
+      align-items: center;
+    }
+    .CaregiverPlan-template .Temp-header h3 {
+       width: 100%; 
+  }
+
+    .CaregiverPlan-template .CaregiverPlane-Time {
+      padding: 0px 0px 30px 0px;
+      justify-content: space-evenly;
+    }
+  }
+  @media (max-width: 550px) {
+    .CaregiverPlan-template .Temp-header h3 {
+      font-size: 34px;
+    }
+    .CaregiverPlan-section .CaregiverPlan-template {
+      grid-template-rows: .4fr 1fr;
+    }
+    .CaregiverPlan-template .CaregiverPlane-Time {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    .CaregiverPlane-Time .Time-Box1,  .CaregiverPlane-Time .Time-Box2 {
+      width: 80%;
+    }
+
+  }
 
 // HomeAttend-Question section
 
@@ -405,4 +836,48 @@ export const Wrapper = styled.section`
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .question-box .question-text h3 {
+    font-size: 34px;
+  }
+  .question-box .question-content p {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 650px) {
+  .question-box .question-text h3 {
+    font-size: 32px;
+  }
+  .question-box .question-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .question-box .question-text h3 {
+    font-size: 28px;
+  }
+  .question-box .question-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+     .question-box .question-text h3 {
+          font-size: 25px;
+      }
+      .question-box .question-content p {
+        font-size: 14px;
+      }
+  }
+
+  @media (max-width: 340px) {
+    .question-box .question-text h3 {
+         font-size: 24px;
+     }
+     .question-box .question-content p {
+       font-size: 13px;
+     }
+ }
 `;

@@ -115,4 +115,10 @@ export const Wrapper = styled.div`
   width: 78%;
 }
 
+
+@media (max-width: 426px){
+  .accordion-title h5{
+    font-size: 18px;
+  }
+}
 `

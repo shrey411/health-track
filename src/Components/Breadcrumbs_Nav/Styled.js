@@ -19,6 +19,7 @@ export const Wrapper = styled.section`
     list-style: none;
     padding: 8px 16px;
     background-color: unset;
+    
   }
   
   .breadcrumb-item {
@@ -45,4 +46,11 @@ export const Wrapper = styled.section`
     color: ${Colors.FONT_COLOR1}; 
   }
   
+
+  @media (max-width: 1024px) {
+
+    .breadcrumb-item {
+      font-size: 17px;
+    }
+  }
 `

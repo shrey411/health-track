@@ -37,7 +37,7 @@ export const Wrapper = styled.section`
 .navbar-nav li{
     padding: 0px 8px;
 }
-.nav-link{
+.nav-link {
     color: ${Colors.BLACK};
     font-family: "Outfit", sans-serif;
 }
@@ -47,6 +47,21 @@ export const Wrapper = styled.section`
     background-color: ${Colors.BACKGROUND_COLOR1};
     font-family: "Outfit", sans-serif;
 
+}
+
+@media (max-width:1050px) {
+  .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:1024px) {
+  .navbar-brand img {
+    width: 90%;
+  }
+  .navbar-nav li{
+    padding: 0px 3px;
+}
 }
 
 @media (max-width: 992px) {
