@@ -7,6 +7,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+gap: 40px;
 
 .nursing-slider {
     width: 100%;

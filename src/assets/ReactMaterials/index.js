@@ -328,6 +328,7 @@ export const PrevArrow = styled.div`
     .PrevButton{
       top: 46%;
   }
+}
   @media (max-width: 1145px){
     .PrevButton{
        top: 44%;
@@ -340,7 +341,7 @@ export const PrevArrow = styled.div`
   }
   @media (max-width: 943px){
     .PrevButton{
-       top: 47%;
+       top: 46%;
     }
   }
 
@@ -401,7 +402,7 @@ export const NextArrow = styled.div`
 }
 @media (max-width: 943px){
   .NextButton{
-     top: 47%;
+     top: 46%;
   }
 }
 @media (max-width: 765px){
@@ -427,7 +428,7 @@ export const Slider2PreviousArrow = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 2px;
     transform: translateY(-50%);
     z-index: 2;
@@ -467,7 +468,7 @@ export const Slider2PreviousArrow = styled.div`
   }
   @media (max-width: 1024px){
     .PrevButton{
-       top: 38%;
+       top: 36%;
     }
   }
   @media (max-width: 943px){
@@ -497,10 +498,14 @@ export const Slider2PreviousArrow = styled.div`
        top: 42%;
     }
   }
-
+  @media (max-width: 400px){
+    .PrevButton{
+       top: 38%;
+    }
+  }
   @media (max-width: 320px){
     .PrevButton{
-       top: 36%;
+       top: 33%;
     }
   }
 
@@ -514,7 +519,7 @@ export const Slider2NextedArrow = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40%;
+    top: 38%;
     right: -2px;
     transform: translateY(-50%);
     z-index: 2;
@@ -553,7 +558,7 @@ export const Slider2NextedArrow = styled.div`
 }
 @media (max-width: 1024px){
   .NextButton{
-     top: 38%;
+     top: 36%;
   }
 }
 @media (max-width: 943px){
@@ -582,9 +587,14 @@ export const Slider2NextedArrow = styled.div`
      top: 42%;
   }
 }
+@media (max-width: 400px){
+  .NextButton{
+     top: 38%;
+  }
+}
 @media (max-width: 320px){
   .NextButton{
-    top: 36%;
+    top: 33%;
   }
 }
 

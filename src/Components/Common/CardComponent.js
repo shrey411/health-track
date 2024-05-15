@@ -13,7 +13,7 @@ import styled from 'styled-components';
 const CardComponent = ({ title, description, imgSrc, color }) => {
     return (
         <Card sx={{
-            margin: '3rem auto', display: 'flex',
+            margin: 'auto', display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
             maxWidth: "95%"

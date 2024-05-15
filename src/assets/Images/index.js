@@ -103,6 +103,19 @@ import MedicalStaffImg2 from '../../All-Images/MedicalStaffImg2.png'
 import MedicalStaffImg3 from '../../All-Images/MedicalStaffImg3.png'
 import MedicalStaffImg4 from '../../All-Images/MedicalStaffImg4.png'
 
+//    Nursing-service/Medical Attend page img
+
+
+import MedicalAttendSlider1 from '../../All-Images/MedicalAttendSlider1.png'
+import Benefits1 from '../../All-Images/Benefits1.png'
+import Benefits2 from '../../All-Images/Benefits2.png'
+import Benefits3 from '../../All-Images/Benefits3.png'
+import Benefits4 from '../../All-Images/Benefits4.png'
+import Benefits5 from '../../All-Images/Benefits5.png'
+
+import BasicAttendImg2 from '../../All-Images/BasicAttendImg2.png'
+
+
 export { 
     TechTricksLogo,
     HomePageBG,
@@ -126,4 +139,7 @@ export {
     CertificationSkill1,CertificationSkill2,CertificationSkill3,
     Expectation1,Expectation2,Expectation3,Expectation4,
     MedicalStaffImg1,MedicalStaffImg2,MedicalStaffImg3,MedicalStaffImg4,
+    MedicalAttendSlider1,
+    Benefits1,Benefits2,Benefits3,Benefits4,Benefits5,
+    BasicAttendImg2,
 }

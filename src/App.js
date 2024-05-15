@@ -6,6 +6,7 @@ import Nurses from './Layouts/Nurses';
 import Header from './Components/Header';
 import Navbar from './Components/Breadcrumbs_Nav/Navbar';
 import HomeAttend from './Layouts/Sub-Pages/Home Attend';
+import MedicalAttend from './Layouts/Sub-Pages/Medical Attend';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Routes>        
         <Routes>
           <Route path='/Nursing Services/Home Attend' element={<HomeAttend />} />
+        </Routes> 
+        <Routes>
+          <Route path='/Nursing Services/Medical Attend' element={<MedicalAttend />} />
         </Routes>        
         <Footer />
       </BrowserRouter>

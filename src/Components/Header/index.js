@@ -64,7 +64,7 @@ const Header = () => {
                       >
                         Home Attendant
                       </DropdownMenuItem>
-                      <DropdownMenuItem
+                      <DropdownMenuItem to='/Nursing Services/Medical Attend'
                         onClick={() => selectMenuItem('Medical Attendant')}
                         style={{ color: selectedMenuItem === 'Medical Attendant' ? 'blue' : 'inherit' }}
                       >

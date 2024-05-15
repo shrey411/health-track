@@ -14,7 +14,7 @@ import {GrLocation, PiMoneyFill, RiGraduationCapLine} from '../../assets/Icons/i
 const MedicalStaffCard = ({imgSrc}) => {
   return (
     <>
-      <Card sx={{ margin: "3rem auto", maxWidth: "95%" }}>
+      <Card sx={{ margin: "auto", maxWidth: "95%" }}>
       <MediaQueries>
         <Box position="relative">
           <CardMedia
