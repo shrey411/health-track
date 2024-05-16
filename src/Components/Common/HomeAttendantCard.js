@@ -46,5 +46,11 @@ export const MEdiaQueries = styled.div`
         font-size: 1rem;
     }
 }
+@media(max-width: 440px){
+    width: 65%;
+    .AttendantCard-Box{
+        width: 50%;
+    }
+}
 
 `

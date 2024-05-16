@@ -30,7 +30,7 @@ export const Wrapper = styled.section`
   .breadcrumb-item+.breadcrumb-item::before {
     float: left;
     padding-right: .7rem;
-    color: ${Colors.FONT_COLOR1};
+    color: ${Colors.BACKGROUND_COLOR1};
     content: ">";
   }
   .breadcrumb-item a {
@@ -50,6 +50,12 @@ export const Wrapper = styled.section`
 
     .breadcrumb-item {
       font-size: 17px;
+    }
+  }
+  @media (max-width: 450px) {
+
+    .breadcrumb-nav{
+      width: 100%;
     }
   }
 `

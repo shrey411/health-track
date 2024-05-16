@@ -5,7 +5,10 @@ import { settings3 } from "../../../assets/ReactMaterials";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BasicAttendImg2, MedicalAttendSlider1 } from '../../../assets/Images';
+import {
+    BasicAttendImg2, Benefits1, Benefits2, Benefits3, Benefits4, Benefits5, MedicalAttendSlider1,
+    InfectionService1, InfectionService2, InfectionService3, InfectionService4, InfectionService5, InfectionService6, InfectionService7, InfectionService8,InfectionService9
+} from '../../../assets/Images';
 import AttendServices from '../../../Components/AttendServices';
 import NursingServiceSlider from '../../../Components/NursingServiceSlider';
 import MedicalStaffSlider from '../../../Components/MedicalStaffSlider';
@@ -19,7 +22,25 @@ const MedicalAttend = () => {
         header: "Our uurses provide complete health support",
         description: "Our Skilled Certified Nurses follow clinical protocol as per with Hospital guideline. while delivering the best Medical Attendant Services."
     };
-
+    const benefits = [
+        { imgSrc: Benefits1, text: 'Consistent & Positive Outcomes' },
+        { imgSrc: Benefits2, text: 'Doorstep Delivery' },
+        { imgSrc: Benefits3, text: 'Branded & Quality Assured Products' },
+        { imgSrc: Benefits4, text: 'Warranty Guaranteed' },
+        { imgSrc: Benefits5, text: 'Customer rating of 4.9/5' }
+    ];
+    const homeAttendServices = [
+        { imgSrc: InfectionService1, description: "Infection control & wound dressing" },
+        { imgSrc: InfectionService2, description: "Care of tubes & catheters" },
+        { imgSrc: InfectionService3, description: "Range of motion exercises" },
+        { imgSrc: InfectionService4, description: "Emergency drugs" },
+        { imgSrc: InfectionService5, description: "High alert medication" },
+        { imgSrc: InfectionService6, description: "Companionship & emotional support" },
+        { imgSrc: InfectionService7, description: "emperature/BP/Sugar check" },
+        { imgSrc: InfectionService8, description: "Repositioning bedridden patients" },
+        { imgSrc: InfectionService9, description: "Wheelchair support & fall prevention" },
+        // add other services...
+    ];
 
     return (
         <>
@@ -44,6 +65,8 @@ const MedicalAttend = () => {
                                 header="Services of certified medical attendants for patients in hospitals undergoing treatment"
                                 question={medicalAttendQuestion}
                                 showBenefits={true}
+                                benefits={benefits}
+                                homeServices={homeAttendServices}
                             />
                         </section>
 

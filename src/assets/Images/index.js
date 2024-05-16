@@ -112,8 +112,28 @@ import Benefits2 from '../../All-Images/Benefits2.png'
 import Benefits3 from '../../All-Images/Benefits3.png'
 import Benefits4 from '../../All-Images/Benefits4.png'
 import Benefits5 from '../../All-Images/Benefits5.png'
+import Benefits6 from '../../All-Images/Benefits6.png'
+import Benefits7 from '../../All-Images/Benefits7.png'
+import Benefits8 from '../../All-Images/Benefits8.png'
+import Benefits9 from '../../All-Images/Benefits9.png'
 
+//    Nursing-service/ICU care page img
+
+import ICUCareSlider1 from '../../All-Images/ICUCareSlider1.png'
 import BasicAttendImg2 from '../../All-Images/BasicAttendImg2.png'
+import BasicAttendImg3 from '../../All-Images/BasicAttendImg3.png'
+
+import InfectionService10 from '../../All-Images/InfectionService10.png'
+import InfectionService11 from '../../All-Images/InfectionService11.png'
+import InfectionService13 from '../../All-Images/InfectionService13.png'
+import InfectionService14 from '../../All-Images/InfectionService14.png'
+import InfectionService15 from '../../All-Images/InfectionService15.png'
+import InfectionService16 from '../../All-Images/InfectionService16.png'
+import InfectionService17 from '../../All-Images/InfectionService17.png'
+import InfectionService18 from '../../All-Images/InfectionService18.png'
+import InfectionService19 from '../../All-Images/InfectionService19.png'
+import InfectionService20 from '../../All-Images/InfectionService20.png'
+import InfectionService21 from '../../All-Images/InfectionService21.png'
 
 
 export { 
@@ -141,5 +161,11 @@ export {
     MedicalStaffImg1,MedicalStaffImg2,MedicalStaffImg3,MedicalStaffImg4,
     MedicalAttendSlider1,
     Benefits1,Benefits2,Benefits3,Benefits4,Benefits5,
-    BasicAttendImg2,
+    BasicAttendImg2,BasicAttendImg3,
+    ICUCareSlider1,
+    Benefits6,Benefits7,Benefits8,Benefits9,
+    InfectionService10,
+    InfectionService11,InfectionService13,InfectionService14,
+    InfectionService15,InfectionService16,InfectionService17,InfectionService18,
+    InfectionService19,InfectionService20,InfectionService21,
 }

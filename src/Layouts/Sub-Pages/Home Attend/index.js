@@ -2,9 +2,20 @@ import React from "react";
 import {
   HomeAttendSlider1,
   HomeNursingVideoImg,
+    InfectionService1,
+    InfectionService2,
+    InfectionService3,
+    InfectionService4,
+    InfectionService5,
+    InfectionService6,
+    InfectionService7,
+    InfectionService8,
+    InfectionService9,
 
 
-} from "../../../assets/Images";
+} from '../../../assets/Images/index';
+
+
 
 import { settings3 } from "../../../assets/ReactMaterials";
 import Slider from "react-slick";
@@ -19,6 +30,19 @@ import BasicAttendantSteps from "../../../Components/BasicAttendSteps";
 import NursingSkilledSection from "../../../Components/NursingSkilledSection";
 
 const HomeAttend = () => {
+
+  const homeAttendServices = [
+    { imgSrc: InfectionService1, description: "Infection control & wound dressing" },
+    { imgSrc: InfectionService2, description: "Care of tubes & catheters" },
+    { imgSrc: InfectionService3, description: "Range of motion exercises" },
+    { imgSrc: InfectionService4, description: "Emergency drugs" },
+    { imgSrc: InfectionService5, description: "High alert medication" },
+    { imgSrc: InfectionService6, description: "Companionship & emotional support" },
+    { imgSrc: InfectionService7, description: "emperature/BP/Sugar check" },
+    { imgSrc: InfectionService8, description: "Repositioning bedridden patients" },
+    { imgSrc: InfectionService9, description: "Wheelchair support & fall prevention" },
+    // add other services...
+];
 
   const homeAttendQuestion = {
     header: "Looking for the best male / female nurse for home care? Our nurses provide complete Health support",
@@ -47,6 +71,7 @@ const HomeAttend = () => {
                 header="Certified home attendants services for elderly & patients"
                 question={homeAttendQuestion}
                 showBenefits={false}
+                homeServices={homeAttendServices}
               />
             </section>
             

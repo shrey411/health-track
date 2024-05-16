@@ -227,6 +227,9 @@ export const Wrapper = styled.section`
   .HomeAttendent-form .form-header h3{
     font-size: 25px;
   }
+  .benefit-item .benefit-content p {
+    font-size: 15px;
+  }
 
 }
 

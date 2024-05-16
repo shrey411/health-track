@@ -1,48 +1,13 @@
 import { Grid } from '@mui/material';
 import React from 'react'
 import HomeAttendantCard from '../Common/HomeAttendantCard';
-import {
-    Benefits1,
-    Benefits2,
-    Benefits3,
-    Benefits4,
-    Benefits5,
-    InfectionService1,
-    InfectionService2,
-    InfectionService3,
-    InfectionService4,
-    InfectionService5,
-    InfectionService6,
-    InfectionService7,
-    InfectionService8,
-    InfectionService9,
-
-
-} from '../../assets/Images';
 import { Wrapper } from './Styled';
 
-const AttendServices = ({ header, question, showBenefits }) => {
+const AttendServices = ({ header, question, showBenefits,benefits, homeServices }) => {
 
-    const homeAttendServices = [
-        { imgSrc: InfectionService1, description: "Infection control & wound dressing" },
-        { imgSrc: InfectionService2, description: "Care of tubes & catheters" },
-        { imgSrc: InfectionService3, description: "Range of motion exercises" },
-        { imgSrc: InfectionService4, description: "Emergency drugs" },
-        { imgSrc: InfectionService5, description: "High alert medication" },
-        { imgSrc: InfectionService6, description: "Companionship & emotional support" },
-        { imgSrc: InfectionService7, description: "emperature/BP/Sugar check" },
-        { imgSrc: InfectionService8, description: "Repositioning bedridden patients" },
-        { imgSrc: InfectionService9, description: "Wheelchair support & fall prevention" },
-        // add other services...
-    ];
+    
 
-    const benefits = [
-        { imgSrc: Benefits1, text: 'Consistent & Positive Outcomes' },
-        { imgSrc: Benefits2, text: 'Doorstep Delivery' },
-        { imgSrc: Benefits3, text: 'Branded & Quality Assured Products' },
-        { imgSrc: Benefits4, text: 'Warranty Guaranteed' },
-        { imgSrc: Benefits5, text: 'Customer rating of 4.9/5' }
-    ];
+    
 
     return (
 
@@ -62,7 +27,7 @@ const AttendServices = ({ header, question, showBenefits }) => {
                                         columnSpacing={{ xs: 0, sm: 3, md: 3 }}
                                         sx={{ margin: "0 0" }}
                                     >
-                                        {homeAttendServices.map((service, index) => (
+                                        {homeServices.map((service, index) => (
                                             <Grid item xs={12} sm={4} md={4} key={index}>
                                                 <HomeAttendantCard
                                                     imgSrc={service.imgSrc}
