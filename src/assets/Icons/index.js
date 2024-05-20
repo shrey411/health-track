@@ -24,6 +24,8 @@ import { GrClose } from "react-icons/gr";
 import { RiGraduationCapLine } from "react-icons/ri";
 import { PiMoneyFill } from "react-icons/pi";
 
+import { CiCalendar } from "react-icons/ci";
+
 
 
 export{
@@ -47,4 +49,5 @@ export{
     SlChart,
     FaPlus,GrClose,
     RiGraduationCapLine,PiMoneyFill,
+    CiCalendar,
 }

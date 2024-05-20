@@ -135,6 +135,25 @@ import InfectionService19 from '../../All-Images/InfectionService19.png'
 import InfectionService20 from '../../All-Images/InfectionService20.png'
 import InfectionService21 from '../../All-Images/InfectionService21.png'
 
+//    Nursing-service/Physiotherapy page img
+
+import PhysiotherapySlider1 from '../../All-Images/PhysiotherapySlider1.png'
+import BasicAttendImg4 from '../../All-Images/BasicAttendImg4.png'
+import PhysioStep1 from '../../All-Images/PhysioStep1.png'
+import PhysioStep2 from '../../All-Images/PhysioStep2.png'
+import PhysioStep3 from '../../All-Images/PhysioStep3.png'
+
+import StrockPain from '../../All-Images/StrockPain.png'
+import LowerBackPain from '../../All-Images/LowerBackPain.png'
+import KneePain from '../../All-Images/KneePain.png'
+import ShoulderPain from '../../All-Images/ShoulderPain.png'
+
+import PhysioModelBoxImg1 from '../../All-Images/PhysioModelBoxImg1.png'
+import NestedModelImg1 from '../../All-Images/NestedModeklImg1.png'
+import NestedModelImg2 from '../../All-Images/NestedModelImg2.png'
+import NestedModelImg3 from '../../All-Images/NestedModelImg3.png'
+
+import PhysioModel3Img from '../../All-Images/PhysioModel3Img.png'
 
 export { 
     TechTricksLogo,
@@ -168,4 +187,9 @@ export {
     InfectionService11,InfectionService13,InfectionService14,
     InfectionService15,InfectionService16,InfectionService17,InfectionService18,
     InfectionService19,InfectionService20,InfectionService21,
+    PhysiotherapySlider1,BasicAttendImg4,
+    PhysioStep1,PhysioStep2,PhysioStep3,
+    StrockPain,LowerBackPain, KneePain,ShoulderPain,
+    PhysioModelBoxImg1,NestedModelImg1,NestedModelImg2,NestedModelImg3,
+    PhysioModel3Img,
 }

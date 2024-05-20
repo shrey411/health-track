@@ -71,6 +71,7 @@ const HomeAttend = () => {
                 header="Certified home attendants services for elderly & patients"
                 question={homeAttendQuestion}
                 showBenefits={false}
+                showService={true}
                 homeServices={homeAttendServices}
               />
             </section>

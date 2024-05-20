@@ -28,7 +28,7 @@ const NursingServiceSlider = () => {
                   title="Apple Hospitals and Research Institute LTD"
                   description="525/E, Vyapari Peth, E Ward, Shahupuri, Kolhapur, Maharashtra -695320"
                   imgSrc={NursingService1}
-                  color={Colors.BACKGROUND_COLOR3}
+                  color={Colors.BACKGROUND_COLOR10}
                 />
               </div>
               <div className="medicalService-box2">
@@ -36,7 +36,7 @@ const NursingServiceSlider = () => {
                   title="Apple Hospitals and Research Institute LTD"
                   description="525/E, Vyapari Peth, E Ward, Shahupuri, Kolhapur, Maharashtra -695320"
                   imgSrc={NursingService2}
-                  color={Colors.BACKGROUND_COLOR4}
+                  color={Colors.BACKGROUND_COLOR10}
                 />
               </div>
               <div className="medicalService-box3">
@@ -44,7 +44,7 @@ const NursingServiceSlider = () => {
                   title="Apple Hospitals and Research Institute LTD"
                   description="525/E, Vyapari Peth, E Ward, Shahupuri, Kolhapur, Maharashtra -695320"
                   imgSrc={NursingService3}
-                  color={Colors.BACKGROUND_COLOR5}
+                  color={Colors.BACKGROUND_COLOR10}
                 />
               </div>
             </Slider>

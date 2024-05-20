@@ -5,37 +5,79 @@ import {
   Expectation2,
   Expectation3,
   Expectation4,
+  PhysioStep1,
+  PhysioStep2,
+  PhysioStep3,
+  
 } from "../../assets/Images";
 import { Wrapper } from "./Styled";
 
-const NursingSkilledSection = ({ NursingExpect, NursingPlace }) => {
+const NursingSkilledSection = ({ NursingExpect, NursingPlace, showPhysioSteps }) => {
   return (
     <>
       <Wrapper>
-        <div className="NursingSkill-Box">
-          <div className="NursingSkill-ques">
-            <h3>Why choose TTHC for home attendant services?</h3>
+        {!showPhysioSteps ? (
+          <div className="NursingSkill-Box">
+            <div className="NursingSkill-ques">
+              <h3>Why choose TTHC for home attendant services?</h3>
+            </div>
+            <div className="NursingSkill-answer">
+              <p>
+                Due to changes in the family structure—from the multi-generation
+                family under one roof to the nuclear family—many of us are facing
+                challenges in caring for our elderly parents. This challenge
+                increases if the children live in one part of the world and the
+                parents in another. Distance can make it difficult to assess a
+                parent’s needs and get them the care they deserve. Tech Tricks
+                Health Care Service is committed to helping you care for the
+                health and well-being of your loved ones. We understand that
+                nothing is better than being in the comfort of home, surrounded by
+                family and friends. We can be there when you can't to help your
+                aging parents and other elderly family members live their golden
+                years at home. We provide health care services at your home. It
+                has a team of well-trained nurses and more supportive staff to
+                take care of elderly, sick, bedridden patients.
+              </p>
+            </div>
+            <CertificateSection />
           </div>
-          <div className="NursingSkill-answer">
-            <p>
-              Due to changes in the family structure—from the multi-generation
-              family under one roof to the nuclear family—many of us are facing
-              challenges in caring for our elderly parents. This challenge
-              increases if the children live in one part of the world and the
-              parents in another. Distance can make it difficult to assess a
-              parent’s needs and get them the care they deserve. Tech Tricks
-              Health Care Service is committed to helping you care for the
-              health and well-being of your loved ones. We understand that
-              nothing is better than being in the comfort of home, surrounded by
-              family and friends. We can be there when you can't to help your
-              aging parents and other elderly family members live their golden
-              years at home. We provide health care services at your home. It
-              has a team of well-trained nurses and more supportive staff to
-              take care of elderly, sick, bedridden patients.
-            </p>
+        )
+          :
+          <div className="NursingSkill-Box">
+            <div className="PhysioSteps-container">
+              <div className="Physio-header">
+                <h4>3 steps for booking physiotherapy</h4>
+              </div>
+              <div className="StepsToBook">
+                <div className="Steps1">
+                  <div className="step1-img">
+                    <img src={PhysioStep1} alt=""/>
+                  </div>
+                  <div className="step1-content">
+                    <p>CHOOSE MODE</p>
+                  </div>
+                </div>
+                <div className="Steps1">
+                  <div className="step1-img">
+                    <img src={PhysioStep2} alt=""/>
+                  </div>
+                  <div className="step1-content">
+                    <p>CHOOSE SLOT</p>
+                  </div>
+                </div>
+                <div className="Steps1">
+                  <div className="step1-img">
+                    <img src={PhysioStep3} alt=""/>
+                  </div>
+                  <div className="step1-content">
+                    <p>MAKE PAYMENT</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <CertificateSection />
           </div>
-          <CertificateSection />
-        </div>
+        }
 
         {NursingExpect && (
           <div className="NursingExpect-section">

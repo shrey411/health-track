@@ -2,12 +2,25 @@ import { Grid } from '@mui/material';
 import React from 'react'
 import HomeAttendantCard from '../Common/HomeAttendantCard';
 import { Wrapper } from './Styled';
+import ServiceCard from '../Common/ServiceCard';
 
-const AttendServices = ({ header, question, showBenefits,benefits, homeServices }) => {
+const AttendServices = ({ header, question, showBenefits, benefits, homeServices, showService }) => {
 
-    
+    const onlineFeatures = [
+        "Initial assessment of current condition.",
+        "Demonstration of exercises.",
+        "Planning and scheduling next sessions."
+    ];
 
-    
+    const atHomeFeatures = [
+        "Initial assessment of current condition.",
+        "Demonstration of exercises.",
+        "Planning and scheduling next sessions.",
+        "Hands-on assessment and treatment.",
+        "Availability of specialized equipment."
+    ];
+
+
 
     return (
 
@@ -19,31 +32,57 @@ const AttendServices = ({ header, question, showBenefits,benefits, homeServices 
                             <h3>{header}</h3>
                         </div>
                         <div className="sub-attend-box">
-                            <div className="home-services">
-                                <div className="services-details">
-                                    <Grid
-                                        container
-                                        rowSpacing={4}
-                                        columnSpacing={{ xs: 0, sm: 3, md: 3 }}
-                                        sx={{ margin: "0 0" }}
-                                    >
-                                        {homeServices.map((service, index) => (
-                                            <Grid item xs={12} sm={4} md={4} key={index}>
-                                                <HomeAttendantCard
-                                                    imgSrc={service.imgSrc}
-                                                    description={service.description}
-                                                />
-                                            </Grid>
-                                        ))}
-                                    </Grid>
-                                </div>
-                                <div className="services-info">
-                                    <div className="info-question">
-                                        <h2>{question.header}</h2>
-                                        <p>{question.description}</p>
+                            {(showService || showBenefits) ?
+                                <div className="home-services">
+                                    <div className="services-details">
+                                        <Grid
+                                            container
+                                            rowSpacing={4}
+                                            columnSpacing={{ xs: 0, sm: 3, md: 3 }}
+                                            sx={{ margin: "0 0" }}
+                                        >
+                                            {homeServices.map((service, index) => (
+                                                <Grid item xs={12} sm={4} md={4} key={index}>
+                                                    <HomeAttendantCard
+                                                        imgSrc={service.imgSrc}
+                                                        description={service.description}
+                                                    />
+                                                </Grid>
+                                            ))}
+                                        </Grid>
+                                    </div>
+                                    <div className="services-info">
+                                        <div className="info-question">
+                                            <h2>{question.header}</h2>
+                                            <p>{question.description}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                :
+                                <div className='PhysiotherapyMode'>
+                                    <div className='PhysiotherapyMode-header'>
+                                        <div className='PhysiotherapyMode-title'>
+                                            <h3>Choose your mode of physiotherapy</h3>
+                                        </div>
+                                    </div>
+                                    <div className='PhysiotherapyMode-Details'>
+                                        
+                                                <ServiceCard
+                                                    title="Online"
+                                                    price="249"
+                                                    features={onlineFeatures}
+                                                    buttonLabel="Book Now"
+                                                />
+                                                <ServiceCard
+                                                    title="At home"
+                                                    price="799"
+                                                    features={atHomeFeatures}
+                                                    buttonLabel="Book Now"
+                                                />
+                                    </div>
+                                </div>
+
+                            }
                             <div className="home-Appointment-box">
                                 <div className="HomeAttendent-form p-4">
                                     <div className="form-header">

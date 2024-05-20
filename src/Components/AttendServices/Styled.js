@@ -17,10 +17,10 @@ export const Wrapper = styled.section`
     justify-content: center;
   }
   .HomeAttend-service .main-attend-Box .HomeAttend-header h3{
-    font-size: 50px;
+    font-size: 45px;
     font-family: outfit;
     font-weight: 600 ;
-    width: 84%;
+    width: 86%;
     text-align: center;
   }
   .HomeAttend-service .main-attend-Box .sub-attend-box {
@@ -138,6 +138,33 @@ export const Wrapper = styled.section`
     }
 
 
+    .sub-attend-box .PhysiotherapyMode{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    
+    .PhysiotherapyMode .PhysiotherapyMode-header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 0px;
+      border-radius: 6px;
+      background-color: ${Colors.BACKGROUND_COLOR10}
+    }
+    .PhysiotherapyMode-header .PhysiotherapyMode-title h3 {
+      font-size: 36px;
+      font-family: outfit;
+      font-weight: 500;
+    }
+    .PhysiotherapyMode .PhysiotherapyMode-Details {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+
   @media(max-width: 1024px){
     .HomeAttend-service .main-attend-Box .HomeAttend-header h3 {
       font-size: 40px;
@@ -154,6 +181,9 @@ export const Wrapper = styled.section`
   }
   .benefit-item .benefit-content p {
     font-size: 18px;
+  }
+  .PhysiotherapyMode-header .PhysiotherapyMode-title h3 {
+    font-size: 32px;
   }
 }
 @media (max-width: 768px) {
@@ -199,7 +229,7 @@ export const Wrapper = styled.section`
     .BesicAttend h2{
         font-size: 24px;
     }
-
+    
 }
 
 @media (max-width: 650px) {
@@ -210,6 +240,12 @@ export const Wrapper = styled.section`
   .services-info .info-question p {
     font-size: 18px;
   }
+
+  .PhysiotherapyMode .PhysiotherapyMode-Details {
+      
+    grid-template-columns: none;
+  }
+  
 
 }
 

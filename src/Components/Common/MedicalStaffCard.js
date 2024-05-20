@@ -27,7 +27,7 @@ const MedicalStaffCard = ({imgSrc}) => {
             aria-label="add to favorites"
             style={{ position: "absolute", top: 8, right: 8 }}
           >
-            <FavoriteIcon color="secondary" />
+            <FavoriteIcon color="" />
           </IconButton>
         </Box>
 

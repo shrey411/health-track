@@ -121,89 +121,90 @@ const Header = () => {
                         ICU Care at Home
                       </DropdownMenuItem>
                       <DropdownMenuItem
+                        to="/Nursing Services/Physiotherapy"
                         onClick={() => selectMenuItem("Physiotherapy")}
-                        style={{
-                          color:
-                            selectedMenuItem === "Physiotherapy"
-                              ? "blue"
-                              : "inherit",
-                        }}
+                      style={{
+                        color:
+                          selectedMenuItem === "Physiotherapy"
+                            ? "blue"
+                            : "inherit",
+                      }}
                       >
-                        Physiotherapy
-                      </DropdownMenuItem>
-                      <DropdownMenuItem
-                        onClick={() => selectMenuItem("Emergency Nursing Care")}
-                        style={{
-                          color:
-                            selectedMenuItem === "Emergency Nursing Care"
-                              ? "blue"
-                              : "inherit",
-                        }}
-                      >
-                        Emergency Nursing Care
-                      </DropdownMenuItem>
-                    </DropdownMenu>
-                  </DropdownContainer>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/services">
-                    Hospital Staffing Services
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/company">
-                    Elder Care services
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/blog">
-                    Company
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
-                    Membership
-                  </Link>
-                </li>
+                      Physiotherapy
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      onClick={() => selectMenuItem("Emergency Nursing Care")}
+                      style={{
+                        color:
+                          selectedMenuItem === "Emergency Nursing Care"
+                            ? "blue"
+                            : "inherit",
+                      }}
+                    >
+                      Emergency Nursing Care
+                    </DropdownMenuItem>
+                  </DropdownMenu>
+                </DropdownContainer>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/services">
+                  Hospital Staffing Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/company">
+                  Elder Care services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/blog">
+                  Company
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Membership
+                </Link>
+              </li>
 
-                <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
-                    Need Help
-                  </Link>
-                </li>
-              </ul>
-              <div className="Profile-dropdown my-2 my-lg-0">
-                <Button
-                  id="fade-button"
-                  aria-controls={open ? "profile-menu" : undefined}
-                  aria-haspopup="true"
-                  aria-expanded={open ? "true" : undefined}
-                  onClick={handleClick}
-                >
-                  My Profile <MdKeyboardArrowDown />
-                </Button>
-                <Menu
-                  id="profile-menu"
-                  MenuListProps={{
-                    "aria-labelledby": "profile-button",
-                  }}
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                >
-                  <MenuItem onClick={handleClose}>
-                    <IoPersonOutline /> My Profile
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>Favorite</MenuItem>
-                  <MenuItem onClick={handleClose}>Appointments</MenuItem>
-                  <MenuItem onClick={handleClose}>Logout</MenuItem>
-                </Menu>
-              </div>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Need Help
+                </Link>
+              </li>
+            </ul>
+            <div className="Profile-dropdown my-2 my-lg-0">
+              <Button
+                id="fade-button"
+                aria-controls={open ? "profile-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
+                My Profile <MdKeyboardArrowDown />
+              </Button>
+              <Menu
+                id="profile-menu"
+                MenuListProps={{
+                  "aria-labelledby": "profile-button",
+                }}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>
+                  <IoPersonOutline /> My Profile
+                </MenuItem>
+                <MenuItem onClick={handleClose}>Favorite</MenuItem>
+                <MenuItem onClick={handleClose}>Appointments</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
             </div>
           </div>
-        </nav>
-      </section>
-    </Wrapper>
+        </div>
+      </nav>
+    </section>
+    </Wrapper >
   );
 };
 

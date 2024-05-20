@@ -40,6 +40,8 @@ export const Wrapper = styled.section `
   width: 100%;
 }
 
+
+
 @media ( max-width:1024px) {
   .HomeNursing-video .video-box {
     width: 85%;
