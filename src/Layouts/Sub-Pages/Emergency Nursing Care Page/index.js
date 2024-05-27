@@ -9,7 +9,6 @@ import { settings3 } from '../../../assets/ReactMaterials'
 import Slider from 'react-slick'
 import HomeAttendantCard from '../../../Components/Common/HomeAttendantCard'
 import { Grid } from '@mui/material'
-import AttendServices from '../../../Components/AttendServices'
 
 const EmergencyNursingCare = () => {
 
@@ -61,11 +60,11 @@ const EmergencyNursingCare = () => {
         { name: 'Emergency Care', image: EmergencyCareImage, description: 'Emergency care provides immediate treatment for acute illnesses and injuries to prevent long-term disability or death.', features: ['Emergency response', 'Stabilization and treatment', '24/7 availability', 'Critical care management', 'Life-saving interventions'] }
     ];
 
-    const benefits = [
-        { imgSrc: 'path/to/benefit1-image.jpg', text: 'Benefit 1 Description' },
-        { imgSrc: 'path/to/benefit2-image.jpg', text: 'Benefit 2 Description' },
-        { imgSrc: 'path/to/benefit3-image.jpg', text: 'Benefit 3 Description' }
-    ];
+    // const benefits = [
+    //     { imgSrc: 'path/to/benefit1-image.jpg', text: 'Benefit 1 Description' },
+    //     { imgSrc: 'path/to/benefit2-image.jpg', text: 'Benefit 2 Description' },
+    //     { imgSrc: 'path/to/benefit3-image.jpg', text: 'Benefit 3 Description' }
+    // ];
 
     const handleCareSelection = (careType) => {
         setSelectedCare(careType);
