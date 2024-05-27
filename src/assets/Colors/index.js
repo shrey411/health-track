@@ -5,6 +5,7 @@ const Colors = {
 
     FONT_COLOR1 : "rgba(29, 32, 35, 1)",
     FONT_COLOR2 : "rgba(33, 37, 41, 1)",
+    FONT_COLOR3 : "rgba(102, 102, 102, 1)",
 
 
      // Background colors

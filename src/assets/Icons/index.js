@@ -26,6 +26,9 @@ import { PiMoneyFill } from "react-icons/pi";
 
 import { CiCalendar } from "react-icons/ci";
 
+import { FaRegClock } from "react-icons/fa6";
+import { SlPencil } from "react-icons/sl";
+
 
 
 export{
@@ -50,4 +53,6 @@ export{
     FaPlus,GrClose,
     RiGraduationCapLine,PiMoneyFill,
     CiCalendar,
+    FaRegClock,
+    SlPencil,
 }

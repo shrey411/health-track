@@ -72,6 +72,7 @@ const ICUCare = () => {
                                 showBenefits={true}
                                 benefits={benefits}
                                 homeServices={homeAttendServices}
+                                basicStepHeader="Basic three steps for best ICU care at home"
 
                             />
                         </section>

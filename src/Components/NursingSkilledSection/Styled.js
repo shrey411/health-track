@@ -78,6 +78,9 @@ padding: 30px 0px;
     .NursingSkill-Box .NursingSkill-ques h3,  .PhysioSteps-container .Physio-header h4{
       font-size: 32px;
     }
+    .PhysioSteps-container .Physio-header {
+      width: 100%;
+    }
     .NursingSkill-Box .NursingSkill-answer p {
       font-size: 18px;
     }
@@ -96,6 +99,7 @@ padding: 30px 0px;
     }
     .PhysioSteps-container .Physio-header {
       width: 100%;
+      text-align: center;
     }
     .NursingSkill-Box .PhysioSteps-container {
       grid-template-columns: none;
@@ -131,7 +135,7 @@ padding: 30px 0px;
     }
   }
   @media (max-width: 340px) {
-    .NursingSkill-Box .NursingSkill-ques h3 ,  .PhysioSteps-container .Physio-header h4{
+    .NursingSkill-Box .NursingSkill-ques h3 {
 
       font-size: 20px;
     }
@@ -218,9 +222,7 @@ padding: 30px 0px;
     .NursingExpect-section .NursingExpect-header h3 {
       font-size: 32px;
     }
-    .PhysioSteps-container .Physio-header {
-      width: 80%;
-    }
+    
     .NursingExpect-items .expectation-container {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 5%;

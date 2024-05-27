@@ -17,7 +17,7 @@ import BasicAttendantSteps from "../../../Components/BasicAttendSteps";
 
 const Physiotherapy = () => {
 
-    const medicalAttendQuestion = {
+    const PhysioQuestion = {
         header: "Our uurses provide complete health support",
         description: "Our Skilled Certified Nurses follow clinical protocol as per with Hospital guideline. while delivering the best Medical Attendant Services."
     };
@@ -63,13 +63,15 @@ const Physiotherapy = () => {
               </div>
               <AttendServices
                 header="Physiotherapy is a healing method focused on mobility. Physiotherapists help patients regain mobility, as far as possible."
-                question={medicalAttendQuestion}
+                question={PhysioQuestion}
                 showBenefits={false}
                 homeServices={homeAttendServices}
+                isPhysioPage = {true}
               />
             </section>
 
             <section className="MedicalAttendSteps">
+              
               <BasicAttendantSteps imageSrc={BasicAttendImg4} showPhysioFaq={true}/>
             </section>
 

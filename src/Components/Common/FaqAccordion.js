@@ -55,7 +55,7 @@ const AccordionItem = ({ number, title, children }) => {
               )}
             </div>
           </div>
-          {isOpen && <div className="accordion-content">{children}</div>}
+          {isOpen && <div className="accordion-content"><p>{children}</p></div>}
         </div>
       </Wrapper>
     </>

@@ -67,6 +67,8 @@ const MedicalAttend = () => {
                                 showBenefits={true}
                                 benefits={benefits}
                                 homeServices={homeAttendServices}
+                                basicStepHeader="Basic three steps for best medical attendant care at hospital"
+
                             />
                         </section>
 

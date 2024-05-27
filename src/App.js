@@ -9,6 +9,7 @@ import HomeAttend from './Layouts/Sub-Pages/Home Attend';
 import MedicalAttend from './Layouts/Sub-Pages/Medical Attend';
 import ICUCare from './Layouts/Sub-Pages/ICU Care Page';
 import  Physiotherapy  from './Layouts/Sub-Pages/Physiotherapy';
+import EmergencyNursingCare from './Layouts/Sub-Pages/Emergency Nursing Care Page';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         </Routes>        
         <Routes>
           <Route path='/Nursing Services/Physiotherapy' element={<Physiotherapy />} />
+        </Routes>     
+        <Routes>
+          <Route path='/Nursing Services/EmergencyNursingCare' element={<EmergencyNursingCare />} />
         </Routes>       
         <Footer />
       </BrowserRouter>

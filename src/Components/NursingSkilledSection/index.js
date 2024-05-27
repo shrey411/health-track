@@ -12,7 +12,7 @@ import {
 } from "../../assets/Images";
 import { Wrapper } from "./Styled";
 
-const NursingSkilledSection = ({ NursingExpect, NursingPlace, showPhysioSteps }) => {
+const NursingSkilledSection = ({ NursingExpect, NursingPlace, showPhysioSteps,isEmergencyPage }) => {
   return (
     <>
       <Wrapper>
@@ -75,7 +75,7 @@ const NursingSkilledSection = ({ NursingExpect, NursingPlace, showPhysioSteps })
                 </div>
               </div>
             </div>
-            <CertificateSection />
+            { (isEmergencyPage || showPhysioSteps ) ? <CertificateSection /> : ""}
           </div>
         }
 

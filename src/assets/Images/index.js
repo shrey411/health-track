@@ -155,6 +155,25 @@ import NestedModelImg3 from '../../All-Images/NestedModelImg3.png'
 
 import PhysioModel3Img from '../../All-Images/PhysioModel3Img.png'
 
+
+// Nursing-service/EmergencyCare page img
+
+
+import EmergencyCareSlider1 from '../../All-Images/EmergencyCareSlider1.png'
+import BasicAttendImg5 from '../../All-Images/BasicAttendImg5.png'
+
+import RiceTubeCareImage from '../../All-Images/RiceTubeCareImage.png'
+import TracheostomyCareImage from '../../All-Images/TracheostomyCareImage.png'
+import PostSurgicalCareImage from '../../All-Images/PostSurgicalCareImage.png'
+import EmergencyCareImage from '../../All-Images/EmergencyCareImage.png'
+
+import RiceTubeFeature1 from '../../All-Images/RiceTubeFeature1.png'
+import RiceTubeFeature2 from '../../All-Images/RiceTubeFeature2.png'
+import RiceTubeFeature3 from '../../All-Images/RiceTubeFeature3.png'
+import RiceTubeFeature4 from '../../All-Images/RiceTubeFeature4.png'
+import RiceTubeFeature5 from '../../All-Images/RiceTubeFeature5.png'
+import RiceTubeFeature6 from '../../All-Images/RiceTubeFeature6.png'
+
 export { 
     TechTricksLogo,
     HomePageBG,
@@ -192,4 +211,8 @@ export {
     StrockPain,LowerBackPain, KneePain,ShoulderPain,
     PhysioModelBoxImg1,NestedModelImg1,NestedModelImg2,NestedModelImg3,
     PhysioModel3Img,
+
+    EmergencyCareSlider1,BasicAttendImg5,
+    RiceTubeCareImage,TracheostomyCareImage,PostSurgicalCareImage,EmergencyCareImage,
+    RiceTubeFeature1,RiceTubeFeature2,RiceTubeFeature3,RiceTubeFeature4,RiceTubeFeature5,RiceTubeFeature6,
 }

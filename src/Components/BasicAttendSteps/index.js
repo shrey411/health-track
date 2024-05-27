@@ -5,7 +5,7 @@ import AccordionItem from '../Common/FaqAccordion';
 import ReusableAccordion from '../Common/Accordion';
 import { KneePain, LowerBackPain, ShoulderPain, StrockPain } from '../../assets/Images';
 
-const BasicAttendantSteps = ({ showPhysioFaq, imageSrc }) => {
+const BasicAttendantSteps = ({ showPhysioFaq, imageSrc, isEmergencyPage }) => {
 
   const accordionsData = [
     {
@@ -44,6 +44,50 @@ const BasicAttendantSteps = ({ showPhysioFaq, imageSrc }) => {
     }
   ];
 
+  const AllPageAttendentData = [
+    {
+      number: 1,
+      title: "Contact us",
+      childContent: "Select the duration of your care plan, pay for the service, and begin your journey with our compassionate Nurses",
+    },
+    {
+      number: 2,
+      title: "Choose Attends",
+      childContent: "Select the duration of your care plan, pay for the service, and begin your journey with our compassionate Nurses",
+    },
+    {
+      number: 3,
+      title: "Pay for the Service",
+      childContent: "Select the duration of your care plan, pay for the service, and begin your journey with our compassionate Nurses",
+    },
+
+  ]
+
+
+  const TubeFeedingData = [
+    {
+      number: 1,
+      title: "Nasogastric Tube",
+      childContent: "A more permanent solution, this tube is directly inserted into the stomach through the abdominal wall.",
+    },
+    {
+      number: 2,
+      title: "Nasojejunal Tube",
+      childContent: "A more permanent solution, this tube is directly inserted into the stomach through the abdominal wall.",
+    },
+    {
+      number: 3,
+      title: "Gastrostomy Tube",
+      childContent: "A more permanent solution, this tube is directly inserted into the stomach through the abdominal wall.",
+    },
+    {
+      number: 4,
+      title: "Jejunotomy Tube",
+      childContent: "A more permanent solution, this tube is directly inserted into the stomach through the abdominal wall.",
+    },
+
+  ]
+
 
   return (
     <>
@@ -54,20 +98,33 @@ const BasicAttendantSteps = ({ showPhysioFaq, imageSrc }) => {
               {!showPhysioFaq ? (
                 <div className="HomeNursing-faq">
                   <div className="faq-box">
-                    <p>Your credible home nursing services are just a call away.</p>
+                    { !isEmergencyPage ?
+                      <p>Your credible home nursing services are just a call away.</p> :
+                      <p>Here's a glimpse of the options we provide:</p>
+                    }
                   </div>
                   <div className="faq-question">
-                    <div className="accordion">
-                      <AccordionItem number={1} title="Contact Us">
-                        <p>You can contact us via email at support@example.com.</p>
-                      </AccordionItem>
-                      <AccordionItem number={2} title="Choose Attends">
-                        <p>Frequently Asked Questions.</p>
-                      </AccordionItem>
-                      <AccordionItem number={3} title="Pay for the Service">
-                        <p>Select the duration of your care plan, pay for the service, and begin your journey with our compassionate Nurses</p>
-                      </AccordionItem>
-                    </div>
+                    {isEmergencyPage ? (
+                      <div className="accordion">
+                        {TubeFeedingData.map((tubeData, index) => (
+                          <AccordionItem
+                            title={tubeData.title}
+                            number={tubeData.number}
+                            children={tubeData.childContent}
+                          />
+                        ))}
+                      </div>
+                    ) :
+                      <div className="accordion">
+                        {AllPageAttendentData.map((attendData, index) => (
+                          <AccordionItem
+                            title={attendData.title}
+                            number={attendData.number}
+                            children={attendData.childContent}
+                          />
+                        ))}
+                      </div>
+                    }
                   </div>
                 </div>
               ) :
@@ -82,7 +139,6 @@ const BasicAttendantSteps = ({ showPhysioFaq, imageSrc }) => {
                       imageUrl={accordion.imageUrl}
                     />
                   ))}
-
                 </div>
               }
               <div className="HomeNursing-video">
@@ -91,7 +147,7 @@ const BasicAttendantSteps = ({ showPhysioFaq, imageSrc }) => {
                 </div>
               </div>
             </div>
-          </main>
+          </main>   
         </section>
       </Wrapper>
     </>

@@ -4,7 +4,7 @@ import HomeAttendantCard from '../Common/HomeAttendantCard';
 import { Wrapper } from './Styled';
 import ServiceCard from '../Common/ServiceCard';
 
-const AttendServices = ({ header, question, showBenefits, benefits, homeServices, showService }) => {
+const AttendServices = ({ header, question, showBenefits, benefits, homeServices, showService, isPhysioPage, basicStepHeader }) => {
 
     const onlineFeatures = [
         "Initial assessment of current condition.",
@@ -19,6 +19,7 @@ const AttendServices = ({ header, question, showBenefits, benefits, homeServices
         "Hands-on assessment and treatment.",
         "Availability of specialized equipment."
     ];
+
 
 
 
@@ -59,29 +60,29 @@ const AttendServices = ({ header, question, showBenefits, benefits, homeServices
                                     </div>
                                 </div>
                                 :
-                                <div className='PhysiotherapyMode'>
+                                (isPhysioPage && (<div className='PhysiotherapyMode'>
                                     <div className='PhysiotherapyMode-header'>
                                         <div className='PhysiotherapyMode-title'>
                                             <h3>Choose your mode of physiotherapy</h3>
                                         </div>
                                     </div>
                                     <div className='PhysiotherapyMode-Details'>
-                                        
-                                                <ServiceCard
-                                                    title="Online"
-                                                    price="249"
-                                                    features={onlineFeatures}
-                                                    buttonLabel="Book Now"
-                                                />
-                                                <ServiceCard
-                                                    title="At home"
-                                                    price="799"
-                                                    features={atHomeFeatures}
-                                                    buttonLabel="Book Now"
-                                                />
+
+                                        <ServiceCard
+                                            title="Online"
+                                            price="249"
+                                            features={onlineFeatures}
+                                            buttonLabel="Book Now"
+                                        />
+                                        <ServiceCard
+                                            title="At home"
+                                            price="799"
+                                            features={atHomeFeatures}
+                                            buttonLabel="Book Now"
+                                        />
                                     </div>
                                 </div>
-
+                                ))
                             }
                             <div className="home-Appointment-box">
                                 <div className="HomeAttendent-form p-4">
@@ -122,7 +123,7 @@ const AttendServices = ({ header, question, showBenefits, benefits, homeServices
                         {showBenefits && (
                             <div className='benefits-section'>
                                 <div className="medical-attend-benefits">
-                                    <div className="benefits-container">
+                                     <div className="benefits-container">
                                         {benefits.map((benefit, index) => (
                                             <div className="benefit-item" key={index}>
                                                 <div className='benefit-img'>
@@ -136,7 +137,7 @@ const AttendServices = ({ header, question, showBenefits, benefits, homeServices
                                     </div>
                                 </div>
                                 <div className='BesicAttend mt-3'>
-                                    <h2>Basic three steps for best medical attendant care at hospital</h2>
+                                    <h2>{basicStepHeader}</h2>
                                 </div>
                             </div>
                         )}

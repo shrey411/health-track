@@ -37,6 +37,10 @@ export default HomeAttendantCard
 
 
 export const MEdiaQueries = styled.div`
+width: 90%;
+img{
+    object-fit: fill;
+}
 .css-12tddib-MuiCardContent-root:last-child {
     padding-bottom: 0px;
 }
